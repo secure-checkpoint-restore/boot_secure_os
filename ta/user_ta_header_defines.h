@@ -32,9 +32,9 @@
 #ifndef USER_TA_HEADER_DEFINES_H
 #define USER_TA_HEADER_DEFINES_H
 
-#include <hello_world_ta.h> /* To get the TA_HELLO_WORLD_UUID define */
+#include <boot_secure_os_ta.h> /* To get the TA_HELLO_WORLD_UUID define */
 
-#define TA_UUID TA_HELLO_WORLD_UUID
+#define TA_UUID TA_BOOT_SECURE_OS_UUID
 
 #define TA_FLAGS                    (TA_FLAG_MULTI_SESSION | TA_FLAG_EXEC_DDR)
 #define TA_STACK_SIZE               (2 * 1024)
@@ -42,7 +42,7 @@
 
 #define TA_CURRENT_TA_EXT_PROPERTIES \
     { "gp.ta.description", USER_TA_PROP_TYPE_STRING, \
-        "Hello World TA" }, \
+        "Boot Secure OS TA" }, \
     { "gp.ta.version", USER_TA_PROP_TYPE_U32, &(const uint32_t){ 0x0010 } }
 
 #endif /*USER_TA_HEADER_DEFINES_H*/

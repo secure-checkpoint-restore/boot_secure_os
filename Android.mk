@@ -18,7 +18,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/ta/include \
 		$(CFG_TEEC_PUBLIC_INCLUDE) \
 
 LOCAL_SHARED_LIBRARIES := libteec
-LOCAL_MODULE := tee_helloworld
+LOCAL_MODULE := tee_bootsecureos
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_EXECUTABLE)
 

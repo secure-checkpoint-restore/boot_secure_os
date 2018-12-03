@@ -25,12 +25,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#define STR_TRACE_USER_TA "HELLO_WORLD"
+#define STR_TRACE_USER_TA "BOOT_SECURE_OS"
 
 #include <tee_internal_api.h>
 #include <tee_internal_api_extensions.h>
 
-#include "hello_world_ta.h"
+#include "boot_secure_os_ta.h"
 
 /*
  * Called when the instance of the TA is created. This is the first call in
@@ -121,20 +121,8 @@ TEE_Result TA_InvokeCommandEntryPoint(void __maybe_unused *sess_ctx,
 	(void)&sess_ctx; /* Unused parameter */
 
 	switch (cmd_id) {
-	case TA_HELLO_WORLD_CMD_INC_VALUE:
+	case TA_BOOT_SECURE_OS_CMD_SYSCALL:
 		return inc_value(param_types, params);
-#if 0
-	case TA_HELLO_WORLD_CMD_XXX:
-		return ...
-		break;
-	case TA_HELLO_WORLD_CMD_YYY:
-		return ...
-		break;
-	case TA_HELLO_WORLD_CMD_ZZZ:
-		return ...
-		break;
-	...
-#endif
 	default:
 		return TEE_ERROR_BAD_PARAMETERS;
 	}

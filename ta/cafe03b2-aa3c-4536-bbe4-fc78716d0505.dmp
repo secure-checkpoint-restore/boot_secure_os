@@ -1,6 +1,6 @@
 
-8aaaf200-2450-11e4-abe2-0002a5d5c51b.elf:     file format elf64-littleaarch64
-8aaaf200-2450-11e4-abe2-0002a5d5c51b.elf
+cafe03b2-aa3c-4536-bbe4-fc78716d0505.elf:     file format elf64-littleaarch64
+cafe03b2-aa3c-4536-bbe4-fc78716d0505.elf
 architecture: aarch64, flags 0x00000150:
 HAS_SYMS, DYNAMIC, D_PAGED
 start address 0x0000000000000020
@@ -9,20 +9,20 @@ Program Header:
     LOAD off    0x0000000000010000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**16
          filesz 0x000000000000ee58 memsz 0x000000000000ee58 flags r-x
     LOAD off    0x000000000001ee58 vaddr 0x000000000000ee58 paddr 0x000000000000ee58 align 2**16
-         filesz 0x00000000000021cc memsz 0x00000000000021cc flags r--
+         filesz 0x00000000000021d4 memsz 0x00000000000021d4 flags r--
     LOAD off    0x0000000000022000 vaddr 0x0000000000012000 paddr 0x0000000000012000 align 2**16
          filesz 0x0000000000000134 memsz 0x000000000000ad58 flags rw-
- DYNAMIC off    0x0000000000020d48 vaddr 0x0000000000010d48 paddr 0x0000000000010d48 align 2**3
+ DYNAMIC off    0x0000000000020d50 vaddr 0x0000000000010d50 paddr 0x0000000000010d50 align 2**3
          filesz 0x0000000000000100 memsz 0x0000000000000100 flags rw-
 
 Dynamic Section:
-  HASH                 0x0000000000010fe0
-  STRTAB               0x0000000000010f68
-  SYMTAB               0x0000000000010e48
+  HASH                 0x0000000000010fe8
+  STRTAB               0x0000000000010f70
+  SYMTAB               0x0000000000010e50
   STRSZ                0x0000000000000078
   SYMENT               0x0000000000000018
   DEBUG                0x0000000000000000
-  RELA                 0x00000000000109b0
+  RELA                 0x00000000000109b8
   RELASZ               0x0000000000000330
   RELAENT              0x0000000000000018
   FLAGS_1              0x0000000008000000
@@ -35,21 +35,21 @@ Idx Name          Size      VMA               LMA               File off  Algn
                   CONTENTS, ALLOC, LOAD, DATA
   1 .text         0000ee38  0000000000000020  0000000000000020  00010020  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00001b54  000000000000ee58  000000000000ee58  0001ee58  2**3
+  2 .rodata       00001b5c  000000000000ee58  000000000000ee58  0001ee58  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .dynsym       00000120  0000000000010e48  0000000000010e48  00020e48  2**3
+  3 .dynsym       00000120  0000000000010e50  0000000000010e50  00020e50  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  4 .rela.dyn     00000258  00000000000109b0  00000000000109b0  000209b0  2**3
+  4 .rela.dyn     00000258  00000000000109b8  00000000000109b8  000209b8  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .got          00000068  0000000000010c08  0000000000010c08  00020c08  2**3
+  5 .got          00000068  0000000000010c10  0000000000010c10  00020c10  2**3
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .rela.got     000000d8  0000000000010c70  0000000000010c70  00020c70  2**3
+  6 .rela.got     000000d8  0000000000010c78  0000000000010c78  00020c78  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  7 .dynamic      00000100  0000000000010d48  0000000000010d48  00020d48  2**3
+  7 .dynamic      00000100  0000000000010d50  0000000000010d50  00020d50  2**3
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .dynstr       00000078  0000000000010f68  0000000000010f68  00020f68  2**0
+  8 .dynstr       00000078  0000000000010f70  0000000000010f70  00020f70  2**0
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  9 .hash         00000044  0000000000010fe0  0000000000010fe0  00020fe0  2**3
+  9 .hash         00000044  0000000000010fe8  0000000000010fe8  00020fe8  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
  10 .data         00000134  0000000000012000  0000000000012000  00022000  2**3
                   CONTENTS, ALLOC, LOAD, DATA
@@ -63,25 +63,25 @@ Idx Name          Size      VMA               LMA               File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  15 .debug_aranges 00000750  0000000000000000  0000000000000000  00035140  2**4
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_line   00003caf  0000000000000000  0000000000000000  00035890  2**0
+ 16 .debug_line   00003cb0  0000000000000000  0000000000000000  00035890  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_str    0000243c  0000000000000000  0000000000000000  0003953f  2**0
+ 17 .debug_str    00002442  0000000000000000  0000000000000000  00039540  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .comment      0000002d  0000000000000000  0000000000000000  0003b97b  2**0
+ 18 .comment      0000002d  0000000000000000  0000000000000000  0003b982  2**0
                   CONTENTS, READONLY
- 19 .debug_frame  000029b0  0000000000000000  0000000000000000  0003b9a8  2**3
+ 19 .debug_frame  000029b0  0000000000000000  0000000000000000  0003b9b0  2**3
                   CONTENTS, READONLY, DEBUGGING
 SYMBOL TABLE:
 0000000000000000 l    d  .ta_head	0000000000000000 .ta_head
 0000000000000020 l    d  .text	0000000000000000 .text
 000000000000ee58 l    d  .rodata	0000000000000000 .rodata
-00000000000109b0 l    d  .rela.dyn	0000000000000000 .rela.dyn
-0000000000010c08 l    d  .got	0000000000000000 .got
-0000000000010c70 l    d  .rela.got	0000000000000000 .rela.got
-0000000000010d48 l    d  .dynamic	0000000000000000 .dynamic
-0000000000010e48 l    d  .dynsym	0000000000000000 .dynsym
-0000000000010f68 l    d  .dynstr	0000000000000000 .dynstr
-0000000000010fe0 l    d  .hash	0000000000000000 .hash
+00000000000109b8 l    d  .rela.dyn	0000000000000000 .rela.dyn
+0000000000010c10 l    d  .got	0000000000000000 .got
+0000000000010c78 l    d  .rela.got	0000000000000000 .rela.got
+0000000000010d50 l    d  .dynamic	0000000000000000 .dynamic
+0000000000010e50 l    d  .dynsym	0000000000000000 .dynsym
+0000000000010f70 l    d  .dynstr	0000000000000000 .dynstr
+0000000000010fe8 l    d  .hash	0000000000000000 .hash
 0000000000012000 l    d  .data	0000000000000000 .data
 0000000000012138 l    d  .bss	0000000000000000 .bss
 0000000000000000 l    d  .debug_info	0000000000000000 .debug_info
@@ -99,7 +99,7 @@ SYMBOL TABLE:
 000000000000ef1c l     O .rodata	0000000000000004 __compound_literal.3
 000000000000ef20 l     O .rodata	0000000000000004 __compound_literal.4
 000000000000ef24 l     O .rodata	0000000000000004 __compound_literal.5
-0000000000000000 l    df *ABS*	0000000000000000 hello_world_ta.c
+0000000000000000 l    df *ABS*	0000000000000000 boot_secure_os_ta.c
 000000000000eea8 l     O .rodata	0000000000000014 __func__.3756
 000000000000eec0 l     O .rodata	0000000000000015 __func__.3760
 000000000000eed8 l     O .rodata	000000000000001a __func__.3770
@@ -118,35 +118,35 @@ SYMBOL TABLE:
 0000000000000534 l     F .text	00000000000000c8 entry_open_session
 00000000000005fc l     F .text	000000000000004c entry_close_session
 0000000000000648 l     F .text	00000000000000a0 entry_invoke_command
-000000000000f048 l     O .rodata	000000000000000d __func__.4291
+000000000000f050 l     O .rodata	000000000000000d __func__.4291
 0000000000000000 l    df *ABS*	0000000000000000 utee_syscalls_a64.o
 0000000000000000 l    df *ABS*	0000000000000000 gprof_a64.o
 0000000000000000 l    df *ABS*	0000000000000000 tee_api_arith.c
 000000000001a180 l     O .bss	0000000000001b40 mempool_u32
 00000000000120f0 l     O .data	0000000000000008 mempool
 0000000000000b10 l     F .text	0000000000000058 TEE_BigInt_Panic
-000000000000f0d0 l     O .rodata	0000000000000011 __func__.4068
-000000000000f0e8 l     O .rodata	0000000000000021 __func__.4104
-000000000000f110 l     O .rodata	000000000000001f __func__.4113
-000000000000f130 l     O .rodata	0000000000000017 __func__.4125
+000000000000f0d8 l     O .rodata	0000000000000011 __func__.4068
+000000000000f0f0 l     O .rodata	0000000000000021 __func__.4104
+000000000000f118 l     O .rodata	000000000000001f __func__.4113
+000000000000f138 l     O .rodata	0000000000000017 __func__.4125
 0000000000000000 l    df *ABS*	0000000000000000 tee_api.c
-000000000000f148 l     O .rodata	0000000000000004 DEFAULT_TEE_MALLOC_HINT
+000000000000f150 l     O .rodata	0000000000000004 DEFAULT_TEE_MALLOC_HINT
 000000000001bcc0 l     O .bss	0000000000000008 tee_api_instance_data
-000000000000f160 l     O .rodata	0000000000000013 __func__.4259
-000000000000f178 l     O .rodata	0000000000000014 __func__.4271
-000000000000f190 l     O .rodata	0000000000000017 __func__.4282
-000000000000f1a8 l     O .rodata	0000000000000015 __func__.4288
-000000000000f1c0 l     O .rodata	0000000000000012 __func__.4321
-000000000000f1d8 l     O .rodata	0000000000000009 __func__.4326
-000000000000f1e8 l     O .rodata	0000000000000018 __func__.4331
-000000000000f200 l     O .rodata	0000000000000018 __func__.4336
-000000000000f218 l     O .rodata	000000000000000f __func__.4341
+000000000000f168 l     O .rodata	0000000000000013 __func__.4259
+000000000000f180 l     O .rodata	0000000000000014 __func__.4271
+000000000000f198 l     O .rodata	0000000000000017 __func__.4282
+000000000000f1b0 l     O .rodata	0000000000000015 __func__.4288
+000000000000f1c8 l     O .rodata	0000000000000012 __func__.4321
+000000000000f1e0 l     O .rodata	0000000000000009 __func__.4326
+000000000000f1f0 l     O .rodata	0000000000000018 __func__.4331
+000000000000f208 l     O .rodata	0000000000000018 __func__.4336
+000000000000f220 l     O .rodata	000000000000000f __func__.4341
 0000000000000000 l    df *ABS*	0000000000000000 tee_api_panic.c
 0000000000000000 l    df *ABS*	0000000000000000 utee_misc.c
 0000000000000000 l    df *ABS*	0000000000000000 tee_user_mem.c
-000000000000f228 l     O .rodata	0000000000000004 DEFAULT_TEE_MALLOC_HINT
+000000000000f230 l     O .rodata	0000000000000004 DEFAULT_TEE_MALLOC_HINT
 00000000000120f8 l     O .data	0000000000000008 ARTIST
-000000000000f230 l     O .rodata	0000000000000008 CANARY_LINE_SIZE
+000000000000f238 l     O .rodata	0000000000000008 CANARY_LINE_SIZE
 0000000000002458 l     F .text	0000000000000018 buf_addr
 0000000000002470 l     F .text	0000000000000024 buf_size
 0000000000002494 l     F .text	0000000000000018 elem_addr
@@ -157,20 +157,20 @@ SYMBOL TABLE:
 000000000000259c l     F .text	0000000000000070 heap_inc
 000000000000260c l     F .text	0000000000000070 heap_dec
 000000000000267c l     F .text	0000000000000088 check_elem_end
-000000000000f368 l     O .rodata	000000000000000f __func__.3875
+000000000000f370 l     O .rodata	000000000000000f __func__.3875
 0000000000002704 l     F .text	000000000000015c check_elem
-000000000000f378 l     O .rodata	000000000000000b __func__.3880
+000000000000f380 l     O .rodata	000000000000000b __func__.3880
 0000000000002860 l     F .text	0000000000000078 is_mem_coherent
-000000000000f388 l     O .rodata	0000000000000010 __func__.3885
-000000000000f398 l     O .rodata	0000000000000013 __func__.3900
-000000000000f3b0 l     O .rodata	0000000000000012 __func__.3917
-000000000000f3c8 l     O .rodata	0000000000000018 __func__.3925
+000000000000f390 l     O .rodata	0000000000000010 __func__.3885
+000000000000f3a0 l     O .rodata	0000000000000013 __func__.3900
+000000000000f3b8 l     O .rodata	0000000000000012 __func__.3917
+000000000000f3d0 l     O .rodata	0000000000000018 __func__.3925
 0000000000002de8 l     F .text	0000000000000090 tee_user_mem_status
-000000000000f3e0 l     O .rodata	0000000000000014 __func__.3930
+000000000000f3e8 l     O .rodata	0000000000000014 __func__.3930
 0000000000000000 l    df *ABS*	0000000000000000 trace_ext.c
-000000000000f3f8 l     O .rodata	000000000000000a prefix.3608
-000000000000f408 l     O .rodata	0000000000000011 failed.3609
-000000000000f420 l     O .rodata	0000000000000005 trunc.3610
+000000000000f400 l     O .rodata	000000000000000a prefix.3608
+000000000000f410 l     O .rodata	0000000000000011 failed.3609
+000000000000f428 l     O .rodata	0000000000000005 trunc.3610
 0000000000000000 l    df *ABS*	0000000000000000 assert.c
 0000000000000000 l    df *ABS*	0000000000000000 bget_malloc.c
 0000000000003160 l     F .text	0000000000000008 malloc_lock
@@ -181,12 +181,12 @@ SYMBOL TABLE:
 000000000001bce0 l     O .bss	0000000000000008 totalloc
 000000000001bce8 l     O .bss	0000000000000008 numget
 000000000001bcf0 l     O .bss	0000000000000008 numrel
-000000000000f8a8 l     O .rodata	0000000000000005 __func__.3289
-000000000000f8b0 l     O .rodata	0000000000000006 __func__.3303
-000000000000f8b8 l     O .rodata	0000000000000006 __func__.3311
-000000000000f8c0 l     O .rodata	0000000000000005 __func__.3318
-000000000000f8c8 l     O .rodata	0000000000000006 __func__.3326
-000000000000f8d0 l     O .rodata	0000000000000007 __func__.3335
+000000000000f8b0 l     O .rodata	0000000000000005 __func__.3289
+000000000000f8b8 l     O .rodata	0000000000000006 __func__.3303
+000000000000f8c0 l     O .rodata	0000000000000006 __func__.3311
+000000000000f8c8 l     O .rodata	0000000000000005 __func__.3318
+000000000000f8d0 l     O .rodata	0000000000000006 __func__.3326
+000000000000f8d8 l     O .rodata	0000000000000007 __func__.3335
 000000000001bcf8 l     O .bss	0000000000000008 malloc_pool
 000000000001bd00 l     O .bss	0000000000000008 malloc_pool_len
 000000000001bd08 l     O .bss	0000000000000038 mstats
@@ -194,25 +194,25 @@ SYMBOL TABLE:
 0000000000003fac l     F .text	0000000000000008 raw_malloc_validate_pools
 0000000000003fb4 l     F .text	0000000000000034 bpool_foreach_iterator_init
 0000000000003fe8 l     F .text	0000000000000138 bpool_foreach_pool
-000000000000f8d8 l     O .rodata	0000000000000013 __func__.3374
+000000000000f8e0 l     O .rodata	0000000000000013 __func__.3374
 0000000000004120 l     F .text	00000000000000c4 bpool_foreach
 00000000000041e4 l     F .text	000000000000008c raw_malloc
 0000000000004270 l     F .text	0000000000000030 raw_free
 00000000000042a0 l     F .text	00000000000000a8 raw_calloc
 0000000000004348 l     F .text	0000000000000094 raw_realloc
 00000000000043dc l     F .text	00000000000001c4 create_free_block
-000000000000f8f0 l     O .rodata	0000000000000012 __func__.3421
+000000000000f8f8 l     O .rodata	0000000000000012 __func__.3421
 00000000000045a0 l     F .text	00000000000001e8 brel_before
-000000000000f908 l     O .rodata	000000000000000c __func__.3430
+000000000000f910 l     O .rodata	000000000000000c __func__.3430
 0000000000004788 l     F .text	0000000000000314 brel_after
-000000000000f918 l     O .rodata	000000000000000b __func__.3440
+000000000000f920 l     O .rodata	000000000000000b __func__.3440
 0000000000004a9c l     F .text	0000000000000200 raw_memalign
-000000000000f928 l     O .rodata	000000000000000d __func__.3454
+000000000000f930 l     O .rodata	000000000000000d __func__.3454
 0000000000004c9c l     F .text	0000000000000074 bget_buf_size
-000000000000f938 l     O .rodata	000000000000000e __func__.3460
+000000000000f940 l     O .rodata	000000000000000e __func__.3460
 0000000000004dc0 l     F .text	000000000000002c realloc_unlocked
 0000000000004e6c l     F .text	0000000000000030 get_payload_start_size
-000000000000f948 l     O .rodata	0000000000000010 __func__.3506
+000000000000f950 l     O .rodata	0000000000000010 __func__.3506
 0000000000000000 l    df *ABS*	0000000000000000 snprintf.c
 0000000000000000 l    df *ABS*	0000000000000000 memcmp.c
 0000000000000000 l    df *ABS*	0000000000000000 memcpy.c
@@ -220,26 +220,26 @@ SYMBOL TABLE:
 0000000000000000 l    df *ABS*	0000000000000000 memset.c
 0000000000000000 l    df *ABS*	0000000000000000 strlen.c
 0000000000000000 l    df *ABS*	0000000000000000 snprintk.c
-000000000000f958 l     O .rodata	0000000000000011 hexdigits
-000000000000f970 l     O .rodata	0000000000000011 HEXDIGITS
+000000000000f960 l     O .rodata	0000000000000011 hexdigits
+000000000000f978 l     O .rodata	0000000000000011 HEXDIGITS
 0000000000005df8 l     F .text	0000000000001e90 kprintf
 0000000000005d08 l     F .text	00000000000000f0 uuid2str
 0000000000000000 l    df *ABS*	0000000000000000 strlcpy.c
 0000000000000000 l    df *ABS*	0000000000000000 trace.c
 0000000000007da0 l     F .text	0000000000000074 trace_level_to_string
-000000000000fb88 l     O .rodata	000000000000002d lvl_strs.3167
+000000000000fb90 l     O .rodata	000000000000002d lvl_strs.3167
 0000000000000000 l    df *ABS*	0000000000000000 memchr.c
 0000000000000000 l    df *ABS*	0000000000000000 mpa_misc.c
 0000000000000000 l    df *ABS*	0000000000000000 mpa_montgomery.c
 0000000000000000 l    df *ABS*	0000000000000000 mpa_primetest.c
-0000000000010828 l     O .rodata	00000000000000b8 const_small_prime_factors
-00000000000108e0 l     O .rodata	0000000000000010 const_miller_rabin_proof_limit
-00000000000108f0 l     O .rodata	000000000000000c const_two
+0000000000010830 l     O .rodata	00000000000000b8 const_small_prime_factors
+00000000000108e8 l     O .rodata	0000000000000010 const_miller_rabin_proof_limit
+00000000000108f8 l     O .rodata	000000000000000c const_two
 0000000000008e28 l     F .text	00000000000000d4 is_small_prime
 0000000000008efc l     F .text	0000000000000070 has_small_factors
 0000000000008f6c l     F .text	0000000000000370 primality_test_miller_rabin
 0000000000008df0 l     F .text	0000000000000038 check_table
-0000000000010900 l     O .rodata	000000000000001c proof_a.3548
+0000000000010908 l     O .rodata	000000000000001c proof_a.3548
 0000000000000000 l    df *ABS*	0000000000000000 mpa_conv.c
 0000000000000000 l    df *ABS*	0000000000000000 mpa_div.c
 00000000000094ac l     F .text	00000000000000cc __mpa_soft_div
@@ -268,15 +268,15 @@ SYMBOL TABLE:
 000000000000df74 l     F .text	00000000000001b4 __mpa_mpanum_to_hexstr
 000000000000e128 l     F .text	0000000000000064 __mpa_count_leading_zero_bits
 000000000000e18c l     F .text	000000000000008c __mpa_size_in_base_255
-0000000000010990 l     O .rodata	000000000000000c __func__.3622
+0000000000010998 l     O .rodata	000000000000000c __func__.3622
 000000000001bd48 l     O .bss	0000000000001002 buf.3608
-00000000000109a0 l     O .rodata	000000000000000c __func__.3636
+00000000000109a8 l     O .rodata	000000000000000c __func__.3636
 000000000000e780 l     F .text	0000000000000084 set_word
 000000000000e97c l     F .text	0000000000000060 get_word
 0000000000000000 l    df *ABS*	0000000000000000 mpa_modulus.c
 0000000000000000 l    df *ABS*	0000000000000000 
-0000000000010d48 l     O *ABS*	0000000000000000 _DYNAMIC
-0000000000010c20 l     O *ABS*	0000000000000000 _GLOBAL_OFFSET_TABLE_
+0000000000010d50 l     O *ABS*	0000000000000000 _DYNAMIC
+0000000000010c28 l     O *ABS*	0000000000000000 _GLOBAL_OFFSET_TABLE_
 0000000000000adc g     F .text	000000000000000c utee_se_channel_transmit
 0000000000000b00 g     F .text	000000000000000c utee_boot
 000000000000db78 g     F .text	0000000000000060 mpa_init_static
@@ -297,7 +297,7 @@ SYMBOL TABLE:
 0000000000002ef4 g     F .text	00000000000001d0 printf
 0000000000002bb8 g     F .text	0000000000000198 tee_user_mem_free
 00000000000007b8 g     F .text	000000000000000c utee_log
-000000000000fbec g     O .rodata	0000000000000004 NR_STORED_PRIMES
+000000000000fbf4 g     O .rodata	0000000000000004 NR_STORED_PRIMES
 0000000000001cec g     F .text	00000000000000f4 TEE_InvokeTACommand
 0000000000008698 g     F .text	0000000000000038 mpa_can_hold
 000000000000b4c4 g     F .text	0000000000000118 __mpa_abs_mul_word
@@ -311,7 +311,7 @@ SYMBOL TABLE:
 0000000000001004 g     F .text	0000000000000058 TEE_BigIntAdd
 00000000000007dc g     F .text	000000000000000c utee_get_property_name_to_index
 000000000000ef10 g     O .rodata	0000000000000008 ta_heap_size
-000000000000fbe8 g     O .rodata	0000000000000004 MAX_TABULATED_PRIME
+000000000000fbf0 g     O .rodata	0000000000000004 MAX_TABULATED_PRIME
 00000000000023b0 g     F .text	000000000000001c utee_malloc
 0000000000000860 g     F .text	000000000000000c utee_cryp_state_alloc
 0000000000000968 g     F .text	000000000000000c utee_authenc_enc_final
@@ -319,7 +319,7 @@ SYMBOL TABLE:
 00000000000010b4 g     F .text	0000000000000038 TEE_BigIntNeg
 000000000000a368 g     F .text	0000000000000148 mpa_div
 0000000000000020 g       .text	0000000000000000 __text_start
-000000000000fbd8 g     O .rodata	000000000000000c const_one
+000000000000fbe0 g     O .rodata	000000000000000c const_one
 0000000000005188 g     F .text	0000000000000118 malloc_buffer_overlaps_heap
 000000000000d718 g     F .text	000000000000002c __mpa_abs_less_than
 0000000000001380 g     F .text	00000000000000bc TEE_BigIntSubMod
@@ -350,7 +350,7 @@ SYMBOL TABLE:
 00000000000023a8 g     F .text	0000000000000008 utee_get_ta_exec_id
 0000000000000f00 g     F .text	0000000000000034 TEE_BigIntCmp
 00000000000023cc g     F .text	0000000000000024 utee_realloc
-000000000000f030 g     O .rodata	0000000000000008 ta_num_props
+000000000000f038 g     O .rodata	0000000000000008 ta_num_props
 00000000000035f4 g     F .text	00000000000000e8 bgetr
 000000000000095c g     F .text	000000000000000c utee_authenc_update_payload
 0000000000000d7c g     F .text	00000000000000c0 TEE_BigIntConvertToOctetString
@@ -393,7 +393,7 @@ SYMBOL TABLE:
 0000000000001eec g     F .text	0000000000000064 TEE_CheckMemoryAccessRights
 000000000001cd58 g       .bss	0000000000000000 __gprof_buf_end
 000000000000d134 g     F .text	000000000000003c mpa_neg
-000000000000fbf0 g     O .rodata	0000000000000c38 PRIME_TABLE
+000000000000fbf8 g     O .rodata	0000000000000c38 PRIME_TABLE
 0000000000000090 g     F .text	0000000000000038 TA_OpenSessionEntryPoint
 000000000000ab7c g     F .text	0000000000000188 mpa_gcd
 0000000000008500 g     F .text	000000000000004c mpa_abs
@@ -482,7 +482,7 @@ SYMBOL TABLE:
 0000000000000884 g     F .text	000000000000000c utee_hash_init
 0000000000000218 g     F .text	0000000000000008 tahead_get_trace_level
 0000000000001924 g     F .text	0000000000000184 __utee_from_param
-000000000000fbc8 g     O .rodata	0000000000000010 Const_1_LShift_Base
+000000000000fbd0 g     O .rodata	0000000000000010 Const_1_LShift_Base
 0000000000001aa8 g     F .text	000000000000013c __utee_to_param
 0000000000004e28 g     F .text	0000000000000044 memalign
 0000000000000e3c g     F .text	0000000000000030 TEE_BigIntConvertFromS32
@@ -528,7 +528,7 @@ SYMBOL TABLE:
 00000000000007e8 g     F .text	000000000000000c utee_open_ta_session
 0000000000009578 g     F .text	0000000000000044 __mpa_div_dword
 00000000000083dc g     F .text	0000000000000068 __mpa_set_unused_digits_to_zero
-000000000000fbb8 g     O .rodata	000000000000000c const_largest_deci_base
+000000000000fbc0 g     O .rodata	000000000000000c const_largest_deci_base
 000000000000e218 g     F .text	0000000000000008 mpa_get_str_size
 0000000000002d64 g     F .text	0000000000000084 tee_user_mem_check_heap
 000000000000089c g     F .text	000000000000000c utee_hash_final
@@ -567,10 +567,10 @@ Disassembly of section .text:
 
 0000000000000020 <TA_CreateEntryPoint>:
 TA_CreateEntryPoint():
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:40
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:40
       20:	a9bf7bfd 	stp	x29, x30, [sp,#-16]!
       24:	910003fd 	mov	x29, sp
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:41
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:41
       28:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
       2c:	91396001 	add	x1, x0, #0xe58
       30:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
@@ -580,18 +580,18 @@ TA_CreateEntryPoint():
       40:	52800062 	mov	w2, #0x3                   	// #3
       44:	52800521 	mov	w1, #0x29                  	// #41
       48:	94001f73 	bl	7e14 <trace_printf>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:42
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:42
       4c:	52800000 	mov	w0, #0x0                   	// #0
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:43
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:43
       50:	a8c17bfd 	ldp	x29, x30, [sp],#16
       54:	d65f03c0 	ret
 
 0000000000000058 <TA_DestroyEntryPoint>:
 TA_DestroyEntryPoint():
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:50
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:50
       58:	a9bf7bfd 	stp	x29, x30, [sp,#-16]!
       5c:	910003fd 	mov	x29, sp
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:51
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:51
       60:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
       64:	91396001 	add	x1, x0, #0xe58
       68:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
@@ -601,41 +601,41 @@ TA_DestroyEntryPoint():
       78:	52800062 	mov	w2, #0x3                   	// #3
       7c:	52800661 	mov	w1, #0x33                  	// #51
       80:	94001f65 	bl	7e14 <trace_printf>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:52
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:52
       84:	d503201f 	nop
       88:	a8c17bfd 	ldp	x29, x30, [sp],#16
       8c:	d65f03c0 	ret
 
 0000000000000090 <TA_OpenSessionEntryPoint>:
 TA_OpenSessionEntryPoint():
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:63
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:63
       90:	d100c3ff 	sub	sp, sp, #0x30
       94:	b9001fe0 	str	w0, [sp,#28]
       98:	f9000be1 	str	x1, [sp,#16]
       9c:	f90007e2 	str	x2, [sp,#8]
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:64
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:64
       a0:	b9002fff 	str	wzr, [sp,#44]
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:68
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:68
       a4:	b9401fe1 	ldr	w1, [sp,#28]
       a8:	b9402fe0 	ldr	w0, [sp,#44]
       ac:	6b00003f 	cmp	w1, w0
       b0:	54000060 	b.eq	bc <TA_OpenSessionEntryPoint+0x2c>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:69
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:69
       b4:	129fff20 	mov	w0, #0xffff0006            	// #-65530
       b8:	14000002 	b	c0 <TA_OpenSessionEntryPoint+0x30>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:81
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:81
       bc:	52800000 	mov	w0, #0x0                   	// #0
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:82
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:82
       c0:	9100c3ff 	add	sp, sp, #0x30
       c4:	d65f03c0 	ret
 
 00000000000000c8 <TA_CloseSessionEntryPoint>:
 TA_CloseSessionEntryPoint():
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:89
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:89
       c8:	a9be7bfd 	stp	x29, x30, [sp,#-32]!
       cc:	910003fd 	mov	x29, sp
       d0:	f9000fa0 	str	x0, [x29,#24]
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:91
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:91
       d4:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
       d8:	9139a001 	add	x1, x0, #0xe68
       dc:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
@@ -645,22 +645,22 @@ TA_CloseSessionEntryPoint():
       ec:	52800062 	mov	w2, #0x3                   	// #3
       f0:	52800b61 	mov	w1, #0x5b                  	// #91
       f4:	94001f48 	bl	7e14 <trace_printf>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:92
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:92
       f8:	d503201f 	nop
       fc:	a8c27bfd 	ldp	x29, x30, [sp],#32
      100:	d65f03c0 	ret
 
 0000000000000104 <inc_value>:
 inc_value():
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:96
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:96
      104:	a9bd7bfd 	stp	x29, x30, [sp,#-48]!
      108:	910003fd 	mov	x29, sp
      10c:	b9001fa0 	str	w0, [x29,#28]
      110:	f9000ba1 	str	x1, [x29,#16]
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:97
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:97
      114:	52800060 	mov	w0, #0x3                   	// #3
      118:	b9002fa0 	str	w0, [x29,#44]
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:102
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:102
      11c:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
      120:	91396001 	add	x1, x0, #0xe58
      124:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
@@ -670,15 +670,15 @@ inc_value():
      134:	52800062 	mov	w2, #0x3                   	// #3
      138:	52800cc1 	mov	w1, #0x66                  	// #102
      13c:	94001f36 	bl	7e14 <trace_printf>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:103
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:103
      140:	b9401fa1 	ldr	w1, [x29,#28]
      144:	b9402fa0 	ldr	w0, [x29,#44]
      148:	6b00003f 	cmp	w1, w0
      14c:	54000060 	b.eq	158 <inc_value+0x54>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:104
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:104
      150:	129fff20 	mov	w0, #0xffff0006            	// #-65530
      154:	1400001f 	b	1d0 <inc_value+0xcc>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:106
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:106
      158:	f9400ba0 	ldr	x0, [x29,#16]
      15c:	b9400002 	ldr	w2, [x0]
      160:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
@@ -691,13 +691,13 @@ inc_value():
      17c:	52800062 	mov	w2, #0x3                   	// #3
      180:	52800d41 	mov	w1, #0x6a                  	// #106
      184:	94001f24 	bl	7e14 <trace_printf>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:107
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:107
      188:	f9400ba0 	ldr	x0, [x29,#16]
      18c:	b9400000 	ldr	w0, [x0]
      190:	11000401 	add	w1, w0, #0x1
      194:	f9400ba0 	ldr	x0, [x29,#16]
      198:	b9000001 	str	w1, [x0]
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:108
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:108
      19c:	f9400ba0 	ldr	x0, [x29,#16]
      1a0:	b9400002 	ldr	w2, [x0]
      1a4:	d0000060 	adrp	x0, e000 <__mpa_mpanum_to_hexstr+0x8c>
@@ -710,33 +710,33 @@ inc_value():
      1c0:	52800062 	mov	w2, #0x3                   	// #3
      1c4:	52800d81 	mov	w1, #0x6c                  	// #108
      1c8:	94001f13 	bl	7e14 <trace_printf>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:109
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:109
      1cc:	52800000 	mov	w0, #0x0                   	// #0
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:110
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:110
      1d0:	a8c37bfd 	ldp	x29, x30, [sp],#48
      1d4:	d65f03c0 	ret
 
 00000000000001d8 <TA_InvokeCommandEntryPoint>:
 TA_InvokeCommandEntryPoint():
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:120
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:120
      1d8:	a9bd7bfd 	stp	x29, x30, [sp,#-48]!
      1dc:	910003fd 	mov	x29, sp
      1e0:	f90017a0 	str	x0, [x29,#40]
      1e4:	b90027a1 	str	w1, [x29,#36]
      1e8:	b90023a2 	str	w2, [x29,#32]
      1ec:	f9000fa3 	str	x3, [x29,#24]
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:123
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:123
      1f0:	b94027a0 	ldr	w0, [x29,#36]
      1f4:	7100001f 	cmp	w0, #0x0
      1f8:	540000a1 	b.ne	20c <TA_InvokeCommandEntryPoint+0x34>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:125
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:125
      1fc:	f9400fa1 	ldr	x1, [x29,#24]
      200:	b94023a0 	ldr	w0, [x29,#32]
      204:	97ffffc0 	bl	104 <inc_value>
      208:	14000002 	b	210 <TA_InvokeCommandEntryPoint+0x38>
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:139
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:127
      20c:	129fff20 	mov	w0, #0xffff0006            	// #-65530
-/home/rex/devel/optee/hello_world/ta/hello_world_ta.c:141
+/home/rex/devel/optee/boot_secure_os/ta/boot_secure_os_ta.c:129
      210:	a8c37bfd 	ldp	x29, x30, [sp],#48
      214:	d65f03c0 	ret
 
@@ -767,8 +767,8 @@ ta_header_save_params():
      238:	b9001fa0 	str	w0, [x29,#28]
      23c:	f9000ba1 	str	x1, [x29,#16]
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:76
-     240:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-     244:	f9462c00 	ldr	x0, [x0,#3160]
+     240:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+     244:	f9463000 	ldr	x0, [x0,#3168]
      248:	b9401fa1 	ldr	w1, [x29,#28]
      24c:	b9000001 	str	w1, [x0]
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:78
@@ -776,16 +776,16 @@ ta_header_save_params():
      254:	f100001f 	cmp	x0, #0x0
      258:	540000e0 	b.eq	274 <ta_header_save_params+0x44>
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:79
-     25c:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-     260:	f9463400 	ldr	x0, [x0,#3176]
+     25c:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+     260:	f9463800 	ldr	x0, [x0,#3184]
      264:	d2800802 	mov	x2, #0x40                  	// #64
      268:	f9400ba1 	ldr	x1, [x29,#16]
      26c:	9400149f 	bl	54e8 <memcpy>
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:82
      270:	14000006 	b	288 <ta_header_save_params+0x58>
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:81
-     274:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-     278:	f9463400 	ldr	x0, [x0,#3176]
+     274:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+     278:	f9463800 	ldr	x0, [x0,#3184]
      27c:	d2800802 	mov	x2, #0x40                  	// #64
      280:	52800001 	mov	w1, #0x0                   	// #0
      284:	9400157c 	bl	5874 <memset>
@@ -873,11 +873,11 @@ ta_header_add_session():
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:109
      370:	97ffffac 	bl	220 <__utee_gprof_init>
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:110
-     374:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-     378:	f9461400 	ldr	x0, [x0,#3112]
+     374:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+     378:	f9461800 	ldr	x0, [x0,#3120]
      37c:	f9400001 	ldr	x1, [x0]
-     380:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-     384:	f9462800 	ldr	x0, [x0,#3152]
+     380:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+     384:	f9462c00 	ldr	x0, [x0,#3160]
      388:	940012c5 	bl	4e9c <malloc_add_pool>
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:111
      38c:	940001f7 	bl	b68 <_TEE_MathAPI_Init>
@@ -1214,9 +1214,9 @@ __utee_entry():
      760:	b9003fa0 	str	w0, [x29,#60]
 /home/rex/devel/optee/optee_os/lib/libutee/arch/arm/user_ta_entry.c:241
      764:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     768:	9100e001 	add	x1, x0, #0x38
+     768:	91010001 	add	x1, x0, #0x40
      76c:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     770:	91012000 	add	x0, x0, #0x48
+     770:	91014000 	add	x0, x0, #0x50
      774:	52800005 	mov	w5, #0x0                   	// #0
      778:	aa0103e4 	mov	x4, x1
      77c:	52800023 	mov	w3, #0x1                   	// #1
@@ -1752,14 +1752,14 @@ TEE_BigInt_Panic():
      b18:	f9000fa0 	str	x0, [x29,#24]
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:64
      b1c:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     b20:	91016000 	add	x0, x0, #0x58
+     b20:	91018000 	add	x0, x0, #0x60
      b24:	f9400fa1 	ldr	x1, [x29,#24]
      b28:	940008f3 	bl	2ef4 <printf>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:65
      b2c:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     b30:	9101a001 	add	x1, x0, #0x68
+     b30:	9101c001 	add	x1, x0, #0x70
      b34:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     b38:	91034000 	add	x0, x0, #0xd0
+     b38:	91036000 	add	x0, x0, #0xd8
      b3c:	528c24e5 	mov	w5, #0x6127                	// #24871
      b40:	72a01625 	movk	w5, #0xb1, lsl #16
      b44:	aa0103e4 	mov	x4, x1
@@ -1786,8 +1786,8 @@ _TEE_MathAPI_Init():
      b80:	d2836801 	mov	x1, #0x1b40                	// #6976
      b84:	94002941 	bl	b088 <mpa_init_scratch_mem>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:81
-     b88:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-     b8c:	f9461c00 	ldr	x0, [x0,#3128]
+     b88:	90000080 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+     b8c:	f9462000 	ldr	x0, [x0,#3136]
      b90:	94002b87 	bl	b9ac <mpa_set_random_generator>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:82
      b94:	d503201f 	nop
@@ -1945,9 +1945,9 @@ TEE_BigIntConvertFromOctetString():
      d3c:	540001a0 	b.eq	d70 <TEE_BigIntConvertFromOctetString+0xa8>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:161
      d40:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     d44:	9101a001 	add	x1, x0, #0x68
+     d44:	9101c001 	add	x1, x0, #0x70
      d48:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     d4c:	9103a000 	add	x0, x0, #0xe8
+     d4c:	9103c000 	add	x0, x0, #0xf0
      d50:	b9404fa5 	ldr	w5, [x29,#76]
      d54:	aa0103e4 	mov	x4, x1
      d58:	52800023 	mov	w3, #0x1                   	// #1
@@ -2008,9 +2008,9 @@ TEE_BigIntConvertToOctetString():
      dfc:	540001a0 	b.eq	e30 <TEE_BigIntConvertToOctetString+0xb4>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:186
      e00:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     e04:	9101a001 	add	x1, x0, #0x68
+     e04:	9101c001 	add	x1, x0, #0x70
      e08:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     e0c:	91044000 	add	x0, x0, #0x110
+     e0c:	91046000 	add	x0, x0, #0x118
      e10:	b9404fa5 	ldr	w5, [x29,#76]
      e14:	aa0103e4 	mov	x4, x1
      e18:	52800023 	mov	w3, #0x1                   	// #1
@@ -2077,9 +2077,9 @@ TEE_BigIntConvertToS32():
      ec0:	540001a0 	b.eq	ef4 <TEE_BigIntConvertToS32+0x88>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:220
      ec4:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     ec8:	9101a001 	add	x1, x0, #0x68
+     ec8:	9101c001 	add	x1, x0, #0x70
      ecc:	f0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-     ed0:	9104c000 	add	x0, x0, #0x130
+     ed0:	9104e000 	add	x0, x0, #0x138
      ed4:	b9402fa5 	ldr	w5, [x29,#44]
      ed8:	aa0103e4 	mov	x4, x1
      edc:	52800023 	mov	w3, #0x1                   	// #1
@@ -2367,7 +2367,7 @@ TEE_BigIntDiv():
     11d8:	54000081 	b.ne	11e8 <TEE_BigIntDiv+0x58>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:359
     11dc:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    11e0:	9101e000 	add	x0, x0, #0x78
+    11e0:	91020000 	add	x0, x0, #0x80
     11e4:	97fffe4b 	bl	b10 <TEE_BigInt_Panic>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:361
     11e8:	b0000080 	adrp	x0, 12000 <ta_props>
@@ -2409,7 +2409,7 @@ TEE_BigIntMod():
     1254:	5400008a 	b.ge	1264 <TEE_BigIntMod+0x4c>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:379
     1258:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    125c:	91022000 	add	x0, x0, #0x88
+    125c:	91024000 	add	x0, x0, #0x90
     1260:	97fffe2c 	bl	b10 <TEE_BigInt_Panic>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:381
     1264:	b0000080 	adrp	x0, 12000 <ta_props>
@@ -2469,7 +2469,7 @@ TEE_BigIntAddMod():
     130c:	5400008a 	b.ge	131c <TEE_BigIntAddMod+0x58>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:399
     1310:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1314:	91022000 	add	x0, x0, #0x88
+    1314:	91024000 	add	x0, x0, #0x90
     1318:	97fffdfe 	bl	b10 <TEE_BigInt_Panic>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:401
     131c:	b0000080 	adrp	x0, 12000 <ta_props>
@@ -2530,7 +2530,7 @@ TEE_BigIntSubMod():
     13c8:	5400008a 	b.ge	13d8 <TEE_BigIntSubMod+0x58>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:418
     13cc:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    13d0:	91022000 	add	x0, x0, #0x88
+    13d0:	91024000 	add	x0, x0, #0x90
     13d4:	97fffdcf 	bl	b10 <TEE_BigInt_Panic>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:420
     13d8:	b0000080 	adrp	x0, 12000 <ta_props>
@@ -2591,7 +2591,7 @@ TEE_BigIntMulMod():
     1484:	5400008a 	b.ge	1494 <TEE_BigIntMulMod+0x58>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:438
     1488:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    148c:	91022000 	add	x0, x0, #0x88
+    148c:	91024000 	add	x0, x0, #0x90
     1490:	97fffda0 	bl	b10 <TEE_BigInt_Panic>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:448
     1494:	b0000080 	adrp	x0, 12000 <ta_props>
@@ -2692,7 +2692,7 @@ TEE_BigIntInvMod():
     15bc:	54000081 	b.ne	15cc <TEE_BigIntInvMod+0x60>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:476
     15c0:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    15c4:	91028000 	add	x0, x0, #0xa0
+    15c4:	9102a000 	add	x0, x0, #0xa8
     15c8:	97fffd52 	bl	b10 <TEE_BigInt_Panic>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api_arith.c:478
     15cc:	b0000080 	adrp	x0, 12000 <ta_props>
@@ -3266,9 +3266,9 @@ TEE_CloseTASession():
     1cac:	540001a0 	b.eq	1ce0 <TEE_CloseTASession+0x60>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:133
     1cb0:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1cb4:	91054001 	add	x1, x0, #0x150
+    1cb4:	91056001 	add	x1, x0, #0x158
     1cb8:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1cbc:	91058000 	add	x0, x0, #0x160
+    1cbc:	9105a000 	add	x0, x0, #0x168
     1cc0:	b9402fa5 	ldr	w5, [x29,#44]
     1cc4:	aa0103e4 	mov	x4, x1
     1cc8:	52800023 	mov	w3, #0x1                   	// #1
@@ -3343,9 +3343,9 @@ TEE_InvokeTACommand():
     1da0:	540001a0 	b.eq	1dd4 <TEE_InvokeTACommand+0xe8>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:162
     1da4:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1da8:	91054001 	add	x1, x0, #0x150
+    1da8:	91056001 	add	x1, x0, #0x158
     1dac:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1db0:	9105e000 	add	x0, x0, #0x178
+    1db0:	91060000 	add	x0, x0, #0x180
     1db4:	b9408fa5 	ldr	w5, [x29,#140]
     1db8:	aa0103e4 	mov	x4, x1
     1dbc:	52800023 	mov	w3, #0x1                   	// #1
@@ -3399,9 +3399,9 @@ TEE_UnmaskCancellation():
     1e38:	540001a0 	b.eq	1e6c <TEE_UnmaskCancellation+0x50>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:185
     1e3c:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1e40:	91054001 	add	x1, x0, #0x150
+    1e40:	91056001 	add	x1, x0, #0x158
     1e44:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1e48:	91064000 	add	x0, x0, #0x190
+    1e48:	91066000 	add	x0, x0, #0x198
     1e4c:	b9401fa5 	ldr	w5, [x29,#28]
     1e50:	aa0103e4 	mov	x4, x1
     1e54:	52800023 	mov	w3, #0x1                   	// #1
@@ -3434,9 +3434,9 @@ TEE_MaskCancellation():
     1ea0:	540001a0 	b.eq	1ed4 <TEE_MaskCancellation+0x50>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:195
     1ea4:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1ea8:	91054001 	add	x1, x0, #0x150
+    1ea8:	91056001 	add	x1, x0, #0x158
     1eac:	d0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    1eb0:	9106a000 	add	x0, x0, #0x1a8
+    1eb0:	9106c000 	add	x0, x0, #0x1b0
     1eb4:	b9401fa5 	ldr	w5, [x29,#28]
     1eb8:	aa0103e4 	mov	x4, x1
     1ebc:	52800023 	mov	w3, #0x1                   	// #1
@@ -3587,9 +3587,9 @@ TEE_GetSystemTime():
     203c:	540001a0 	b.eq	2070 <TEE_GetSystemTime+0x58>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:256
     2040:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2044:	91054001 	add	x1, x0, #0x150
+    2044:	91056001 	add	x1, x0, #0x158
     2048:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    204c:	91070000 	add	x0, x0, #0x1c0
+    204c:	91072000 	add	x0, x0, #0x1c8
     2050:	b9402fa5 	ldr	w5, [x29,#44]
     2054:	aa0103e4 	mov	x4, x1
     2058:	52800023 	mov	w3, #0x1                   	// #1
@@ -3624,9 +3624,9 @@ TEE_Wait():
     20ac:	540001a0 	b.eq	20e0 <TEE_Wait+0x64>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:264
     20b0:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    20b4:	91054001 	add	x1, x0, #0x150
+    20b4:	91056001 	add	x1, x0, #0x158
     20b8:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    20bc:	91076000 	add	x0, x0, #0x1d8
+    20bc:	91078000 	add	x0, x0, #0x1e0
     20c0:	b9402fa5 	ldr	w5, [x29,#44]
     20c4:	aa0103e4 	mov	x4, x1
     20c8:	52800023 	mov	w3, #0x1                   	// #1
@@ -3692,9 +3692,9 @@ TEE_GetTAPersistentTime():
     2178:	540001a0 	b.eq	21ac <TEE_GetTAPersistentTime+0xc0>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:285
     217c:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2180:	91054001 	add	x1, x0, #0x150
+    2180:	91056001 	add	x1, x0, #0x158
     2184:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2188:	9107a000 	add	x0, x0, #0x1e8
+    2188:	9107c000 	add	x0, x0, #0x1f0
     218c:	b9402fa5 	ldr	w5, [x29,#44]
     2190:	aa0103e4 	mov	x4, x1
     2194:	52800023 	mov	w3, #0x1                   	// #1
@@ -3735,9 +3735,9 @@ TEE_SetTAPersistentTime():
     21f8:	540001a0 	b.eq	222c <TEE_SetTAPersistentTime+0x74>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:299
     21fc:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2200:	91054001 	add	x1, x0, #0x150
+    2200:	91056001 	add	x1, x0, #0x158
     2204:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2208:	91080000 	add	x0, x0, #0x200
+    2208:	91082000 	add	x0, x0, #0x208
     220c:	b9402fa5 	ldr	w5, [x29,#44]
     2210:	aa0103e4 	mov	x4, x1
     2214:	52800023 	mov	w3, #0x1                   	// #1
@@ -3769,9 +3769,9 @@ TEE_GetREETime():
     225c:	540001a0 	b.eq	2290 <TEE_GetREETime+0x58>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_api.c:309
     2260:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2264:	91054001 	add	x1, x0, #0x150
+    2264:	91056001 	add	x1, x0, #0x158
     2268:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    226c:	91086000 	add	x0, x0, #0x218
+    226c:	91088000 	add	x0, x0, #0x220
     2270:	b9402fa5 	ldr	w5, [x29,#44]
     2274:	aa0103e4 	mov	x4, x1
     2278:	52800023 	mov	w3, #0x1                   	// #1
@@ -4072,7 +4072,7 @@ print_buf():
     2544:	97ffffcb 	bl	2470 <buf_size>
     2548:	aa0003e2 	mov	x2, x0
     254c:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2550:	9108e001 	add	x1, x0, #0x238
+    2550:	91090001 	add	x1, x0, #0x240
     2554:	f9000be2 	str	x2, [sp,#16]
     2558:	f90007f3 	str	x19, [sp,#8]
     255c:	f94013a0 	ldr	x0, [x29,#32]
@@ -4193,9 +4193,9 @@ check_elem_end():
     26c4:	540001a0 	b.eq	26f8 <check_elem_end+0x7c>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:228
     26c8:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    26cc:	91098001 	add	x1, x0, #0x260
+    26cc:	9109a001 	add	x1, x0, #0x268
     26d0:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    26d4:	910da000 	add	x0, x0, #0x368
+    26d4:	910dc000 	add	x0, x0, #0x370
     26d8:	f9400fa4 	ldr	x4, [x29,#24]
     26dc:	aa0103e3 	mov	x3, x1
     26e0:	52801c82 	mov	w2, #0xe4                  	// #228
@@ -4231,9 +4231,9 @@ check_elem():
     2730:	540002c0 	b.eq	2788 <check_elem+0x84>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:244
     2734:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2738:	9109c001 	add	x1, x0, #0x270
+    2738:	9109e001 	add	x1, x0, #0x278
     273c:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2740:	910de000 	add	x0, x0, #0x378
+    2740:	910e0000 	add	x0, x0, #0x380
     2744:	aa0103e4 	mov	x4, x1
     2748:	52800023 	mov	w3, #0x1                   	// #1
     274c:	52800022 	mov	w2, #0x1                   	// #1
@@ -4241,9 +4241,9 @@ check_elem():
     2754:	940015b0 	bl	7e14 <trace_printf>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:245
     2758:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    275c:	910a2001 	add	x1, x0, #0x288
+    275c:	910a4001 	add	x1, x0, #0x290
     2760:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2764:	910de000 	add	x0, x0, #0x378
+    2764:	910e0000 	add	x0, x0, #0x380
     2768:	52800005 	mov	w5, #0x0                   	// #0
     276c:	aa0103e4 	mov	x4, x1
     2770:	52800023 	mov	w3, #0x1                   	// #1
@@ -4270,9 +4270,9 @@ check_elem():
     27b8:	540001a0 	b.eq	27ec <check_elem+0xe8>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:250
     27bc:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    27c0:	910a6001 	add	x1, x0, #0x298
+    27c0:	910a8001 	add	x1, x0, #0x2a0
     27c4:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    27c8:	910de000 	add	x0, x0, #0x378
+    27c8:	910e0000 	add	x0, x0, #0x380
     27cc:	f94017a4 	ldr	x4, [x29,#40]
     27d0:	aa0103e3 	mov	x3, x1
     27d4:	52801f42 	mov	w2, #0xfa                  	// #250
@@ -4300,9 +4300,9 @@ check_elem():
     281c:	540001a0 	b.eq	2850 <check_elem+0x14c>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:256
     2820:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2824:	910a6001 	add	x1, x0, #0x298
+    2824:	910a8001 	add	x1, x0, #0x2a0
     2828:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    282c:	910de000 	add	x0, x0, #0x378
+    282c:	910e0000 	add	x0, x0, #0x380
     2830:	f94017a4 	ldr	x4, [x29,#40]
     2834:	aa0103e3 	mov	x3, x1
     2838:	52802002 	mov	w2, #0x100                 	// #256
@@ -4337,11 +4337,11 @@ is_mem_coherent():
     2888:	54000161 	b.ne	28b4 <is_mem_coherent+0x54>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:270 (discriminator 1)
     288c:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2890:	910e2002 	add	x2, x0, #0x388
+    2890:	910e4002 	add	x2, x0, #0x390
     2894:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2898:	910aa001 	add	x1, x0, #0x2a8
+    2898:	910ac001 	add	x1, x0, #0x2b0
     289c:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    28a0:	910b2000 	add	x0, x0, #0x2c8
+    28a0:	910b4000 	add	x0, x0, #0x2d0
     28a4:	aa0203e3 	mov	x3, x2
     28a8:	528021c2 	mov	w2, #0x10e                 	// #270
     28ac:	94000211 	bl	30f0 <_assert_log>
@@ -4401,9 +4401,9 @@ tee_user_mem_alloc():
     2944:	540001a0 	b.eq	2978 <tee_user_mem_alloc+0xa0>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:322
     2948:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    294c:	910b4001 	add	x1, x0, #0x2d0
+    294c:	910b6001 	add	x1, x0, #0x2d8
     2950:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2954:	910e6000 	add	x0, x0, #0x398
+    2954:	910e8000 	add	x0, x0, #0x3a0
     2958:	b94017a5 	ldr	w5, [x29,#20]
     295c:	aa0103e4 	mov	x4, x1
     2960:	52800023 	mov	w3, #0x1                   	// #1
@@ -4470,9 +4470,9 @@ tee_user_mem_alloc():
     2a24:	39000001 	strb	w1, [x0]
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:343
     2a28:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2a2c:	910bc001 	add	x1, x0, #0x2f0
+    2a2c:	910be001 	add	x1, x0, #0x2f8
     2a30:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2a34:	910e6000 	add	x0, x0, #0x398
+    2a34:	910e8000 	add	x0, x0, #0x3a0
     2a38:	f94013a4 	ldr	x4, [x29,#32]
     2a3c:	aa0103e3 	mov	x3, x1
     2a40:	52802ae2 	mov	w2, #0x157                 	// #343
@@ -4622,9 +4622,9 @@ tee_user_mem_free():
     2bf4:	54000181 	b.ne	2c24 <tee_user_mem_free+0x6c>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:435
     2bf8:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2bfc:	910c0001 	add	x1, x0, #0x300
+    2bfc:	910c2001 	add	x1, x0, #0x308
     2c00:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2c04:	910ec000 	add	x0, x0, #0x3b0
+    2c04:	910ee000 	add	x0, x0, #0x3b8
     2c08:	f9400fa5 	ldr	x5, [x29,#24]
     2c0c:	aa0103e4 	mov	x4, x1
     2c10:	52800023 	mov	w3, #0x1                   	// #1
@@ -4642,9 +4642,9 @@ tee_user_mem_free():
     2c34:	f90013a0 	str	x0, [x29,#32]
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:442
     2c38:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2c3c:	910c8001 	add	x1, x0, #0x320
+    2c3c:	910ca001 	add	x1, x0, #0x328
     2c40:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2c44:	910ec000 	add	x0, x0, #0x3b0
+    2c44:	910ee000 	add	x0, x0, #0x3b8
     2c48:	f94013a4 	ldr	x4, [x29,#32]
     2c4c:	aa0103e3 	mov	x3, x1
     2c50:	52803742 	mov	w2, #0x1ba                 	// #442
@@ -4658,9 +4658,9 @@ tee_user_mem_free():
     2c6c:	540002c1 	b.ne	2cc4 <tee_user_mem_free+0x10c>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:446
     2c70:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2c74:	910ca001 	add	x1, x0, #0x328
+    2c74:	910cc001 	add	x1, x0, #0x330
     2c78:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2c7c:	910ec000 	add	x0, x0, #0x3b0
+    2c7c:	910ee000 	add	x0, x0, #0x3b8
     2c80:	aa0103e4 	mov	x4, x1
     2c84:	52800023 	mov	w3, #0x1                   	// #1
     2c88:	52800022 	mov	w2, #0x1                   	// #1
@@ -4668,9 +4668,9 @@ tee_user_mem_free():
     2c90:	94001461 	bl	7e14 <trace_printf>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:447
     2c94:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2c98:	910a2001 	add	x1, x0, #0x288
+    2c98:	910a4001 	add	x1, x0, #0x290
     2c9c:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2ca0:	910ec000 	add	x0, x0, #0x3b0
+    2ca0:	910ee000 	add	x0, x0, #0x3b8
     2ca4:	52800005 	mov	w5, #0x0                   	// #0
     2ca8:	aa0103e4 	mov	x4, x1
     2cac:	52800023 	mov	w3, #0x1                   	// #1
@@ -4752,9 +4752,9 @@ tee_user_mem_check_heap():
     2d88:	91332000 	add	x0, x0, #0xcc8
     2d8c:	f9400002 	ldr	x2, [x0]
     2d90:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2d94:	910d0001 	add	x1, x0, #0x340
+    2d94:	910d2001 	add	x1, x0, #0x348
     2d98:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2d9c:	910f2000 	add	x0, x0, #0x3c8
+    2d9c:	910f4000 	add	x0, x0, #0x3d0
     2da0:	aa0203e5 	mov	x5, x2
     2da4:	aa0103e4 	mov	x4, x1
     2da8:	52800023 	mov	w3, #0x1                   	// #1
@@ -4803,9 +4803,9 @@ tee_user_mem_status():
     2e28:	1400000e 	b	2e60 <tee_user_mem_status+0x78>
 /home/rex/devel/optee/optee_os/lib/libutee/tee_user_mem.c:519 (discriminator 3)
     2e2c:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2e30:	910d8001 	add	x1, x0, #0x360
+    2e30:	910da001 	add	x1, x0, #0x368
     2e34:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2e38:	910f8000 	add	x0, x0, #0x3e0
+    2e38:	910fa000 	add	x0, x0, #0x3e8
     2e3c:	f94017a4 	ldr	x4, [x29,#40]
     2e40:	aa0103e3 	mov	x3, x1
     2e44:	528040e2 	mov	w2, #0x207                 	// #519
@@ -4916,7 +4916,7 @@ printf():
     2f74:	14000050 	b	30b4 <printf+0x1c0>
 /home/rex/devel/optee/optee_os/lib/libutee/trace_ext.c:67
     2f78:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2f7c:	910fe001 	add	x1, x0, #0x3f8
+    2f7c:	91100001 	add	x1, x0, #0x400
     2f80:	9101e3a0 	add	x0, x29, #0x78
     2f84:	d2802002 	mov	x2, #0x100                 	// #256
     2f88:	94001340 	bl	7c88 <strlcpy>
@@ -4927,7 +4927,7 @@ printf():
     2f98:	540000c9 	b.ls	2fb0 <printf+0xbc>
 /home/rex/devel/optee/optee_os/lib/libutee/trace_ext.c:69
     2f9c:	b0000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    2fa0:	91102000 	add	x0, x0, #0x408
+    2fa0:	91104000 	add	x0, x0, #0x410
     2fa4:	94000048 	bl	30c4 <puts>
 /home/rex/devel/optee/optee_os/lib/libutee/trace_ext.c:70
     2fa8:	52800000 	mov	w0, #0x0                   	// #0
@@ -4970,7 +4970,7 @@ printf():
     3030:	540000ca 	b.ge	3048 <printf+0x154>
 /home/rex/devel/optee/optee_os/lib/libutee/trace_ext.c:78
     3034:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3038:	91102000 	add	x0, x0, #0x408
+    3038:	91104000 	add	x0, x0, #0x410
     303c:	94000022 	bl	30c4 <puts>
 /home/rex/devel/optee/optee_os/lib/libutee/trace_ext.c:79
     3040:	b9417fa0 	ldr	w0, [x29,#380]
@@ -4979,7 +4979,7 @@ printf():
     3048:	b9417fa0 	ldr	w0, [x29,#380]
     304c:	2a0003f3 	mov	w19, w0
     3050:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3054:	910fe000 	add	x0, x0, #0x3f8
+    3054:	91100000 	add	x0, x0, #0x400
     3058:	94000a7a 	bl	5a40 <strlen>
     305c:	aa0003e1 	mov	x1, x0
     3060:	d2802000 	mov	x0, #0x100                 	// #256
@@ -4988,7 +4988,7 @@ printf():
     306c:	540001e3 	b.cc	30a8 <printf+0x1b4>
 /home/rex/devel/optee/optee_os/lib/libutee/trace_ext.c:82
     3070:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3074:	91108000 	add	x0, x0, #0x420
+    3074:	9110a000 	add	x0, x0, #0x428
     3078:	39400001 	ldrb	w1, [x0]
     307c:	3905cfa1 	strb	w1, [x29,#371]
     3080:	39400401 	ldrb	w1, [x0,#1]
@@ -5044,7 +5044,7 @@ _assert_log():
     3108:	f9000ba3 	str	x3, [x29,#16]
 /home/rex/devel/optee/optee_os/lib/libutee/assert.c:40
     310c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3110:	9110a001 	add	x1, x0, #0x428
+    3110:	9110c001 	add	x1, x0, #0x430
     3114:	f9400ba0 	ldr	x0, [x29,#16]
     3118:	f90003e0 	str	x0, [sp]
     311c:	b9401fa7 	ldr	w7, [x29,#28]
@@ -5125,11 +5125,11 @@ bget():
     31c8:	5400016c 	b.gt	31f4 <bget+0x48>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:586 (discriminator 1)
     31cc:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    31d0:	9122a002 	add	x2, x0, #0x8a8
+    31d0:	9122c002 	add	x2, x0, #0x8b0
     31d4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    31d8:	91114001 	add	x1, x0, #0x450
+    31d8:	91116001 	add	x1, x0, #0x458
     31dc:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    31e0:	9111c000 	add	x0, x0, #0x470
+    31e0:	9111e000 	add	x0, x0, #0x478
     31e4:	aa0203e3 	mov	x3, x2
     31e8:	52804942 	mov	w2, #0x24a                 	// #586
     31ec:	97ffffc1 	bl	30f0 <_assert_log>
@@ -5193,11 +5193,11 @@ bget():
     32a8:	54000160 	b.eq	32d4 <bget+0x128>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:645 (discriminator 1)
     32ac:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    32b0:	9122a002 	add	x2, x0, #0x8a8
+    32b0:	9122c002 	add	x2, x0, #0x8b0
     32b4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    32b8:	91114001 	add	x1, x0, #0x450
+    32b8:	91116001 	add	x1, x0, #0x458
     32bc:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    32c0:	91120000 	add	x0, x0, #0x480
+    32c0:	91122000 	add	x0, x0, #0x488
     32c4:	aa0203e3 	mov	x3, x2
     32c8:	528050a2 	mov	w2, #0x285                 	// #645
     32cc:	97ffff89 	bl	30f0 <_assert_log>
@@ -5267,11 +5267,11 @@ bget():
     33a0:	54000160 	b.eq	33cc <bget+0x220>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:666 (discriminator 1)
     33a4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    33a8:	9122a002 	add	x2, x0, #0x8a8
+    33a8:	9122c002 	add	x2, x0, #0x8b0
     33ac:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    33b0:	91114001 	add	x1, x0, #0x450
+    33b0:	91116001 	add	x1, x0, #0x458
     33b4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    33b8:	91128000 	add	x0, x0, #0x4a0
+    33b8:	9112a000 	add	x0, x0, #0x4a8
     33bc:	aa0203e3 	mov	x3, x2
     33c0:	52805342 	mov	w2, #0x29a                 	// #666
     33c4:	97ffff4b 	bl	30f0 <_assert_log>
@@ -5285,11 +5285,11 @@ bget():
     33e0:	54000160 	b.eq	340c <bget+0x260>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:671 (discriminator 1)
     33e4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    33e8:	9122a002 	add	x2, x0, #0x8a8
+    33e8:	9122c002 	add	x2, x0, #0x8b0
     33ec:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    33f0:	91114001 	add	x1, x0, #0x450
+    33f0:	91116001 	add	x1, x0, #0x458
     33f4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    33f8:	91130000 	add	x0, x0, #0x4c0
+    33f8:	91132000 	add	x0, x0, #0x4c8
     33fc:	aa0203e3 	mov	x3, x2
     3400:	528053e2 	mov	w2, #0x29f                 	// #671
     3404:	97ffff3b 	bl	30f0 <_assert_log>
@@ -5303,11 +5303,11 @@ bget():
     3420:	54000160 	b.eq	344c <bget+0x2a0>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:672 (discriminator 1)
     3424:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3428:	9122a002 	add	x2, x0, #0x8a8
+    3428:	9122c002 	add	x2, x0, #0x8b0
     342c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3430:	91114001 	add	x1, x0, #0x450
+    3430:	91116001 	add	x1, x0, #0x458
     3434:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3438:	91138000 	add	x0, x0, #0x4e0
+    3438:	9113a000 	add	x0, x0, #0x4e8
     343c:	aa0203e3 	mov	x3, x2
     3440:	52805402 	mov	w2, #0x2a0                 	// #672
     3444:	97ffff2b 	bl	30f0 <_assert_log>
@@ -5427,11 +5427,11 @@ bgetz():
     35a4:	5400016a 	b.ge	35d0 <bgetz+0xb0>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:781 (discriminator 1)
     35a8:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    35ac:	9122c002 	add	x2, x0, #0x8b0
+    35ac:	9122e002 	add	x2, x0, #0x8b8
     35b0:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    35b4:	91114001 	add	x1, x0, #0x450
+    35b4:	91116001 	add	x1, x0, #0x458
     35b8:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    35bc:	91140000 	add	x0, x0, #0x500
+    35bc:	91142000 	add	x0, x0, #0x508
     35c0:	aa0203e3 	mov	x3, x2
     35c4:	528061a2 	mov	w2, #0x30d                 	// #781
     35c8:	97fffeca 	bl	30f0 <_assert_log>
@@ -5492,11 +5492,11 @@ bgetr():
     3668:	5400016c 	b.gt	3694 <bgetr+0xa0>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:818 (discriminator 1)
     366c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3670:	9122e002 	add	x2, x0, #0x8b8
+    3670:	91230002 	add	x2, x0, #0x8c0
     3674:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3678:	91114001 	add	x1, x0, #0x450
+    3678:	91116001 	add	x1, x0, #0x458
     367c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3680:	91144000 	add	x0, x0, #0x510
+    3680:	91146000 	add	x0, x0, #0x518
     3684:	aa0203e3 	mov	x3, x2
     3688:	52806642 	mov	w2, #0x332                 	// #818
     368c:	97fffe99 	bl	30f0 <_assert_log>
@@ -5554,11 +5554,11 @@ brel():
     371c:	54000161 	b.ne	3748 <brel+0x6c>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:837 (discriminator 1)
     3720:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3724:	91230002 	add	x2, x0, #0x8c0
+    3724:	91232002 	add	x2, x0, #0x8c8
     3728:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    372c:	91114001 	add	x1, x0, #0x450
+    372c:	91116001 	add	x1, x0, #0x458
     3730:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3734:	91148000 	add	x0, x0, #0x520
+    3734:	9114a000 	add	x0, x0, #0x528
     3738:	aa0203e3 	mov	x3, x2
     373c:	528068a2 	mov	w2, #0x345                 	// #837
     3740:	97fffe6c 	bl	30f0 <_assert_log>
@@ -5577,11 +5577,11 @@ brel():
     3768:	5400016b 	b.lt	3794 <brel+0xb8>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:868 (discriminator 1)
     376c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3770:	91230002 	add	x2, x0, #0x8c0
+    3770:	91232002 	add	x2, x0, #0x8c8
     3774:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3778:	91114001 	add	x1, x0, #0x450
+    3778:	91116001 	add	x1, x0, #0x458
     377c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3780:	9114c000 	add	x0, x0, #0x530
+    3780:	9114e000 	add	x0, x0, #0x538
     3784:	aa0203e3 	mov	x3, x2
     3788:	52806c82 	mov	w2, #0x364                 	// #868
     378c:	97fffe59 	bl	30f0 <_assert_log>
@@ -5602,11 +5602,11 @@ brel():
     37c0:	54000160 	b.eq	37ec <brel+0x110>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:874 (discriminator 1)
     37c4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    37c8:	91230002 	add	x2, x0, #0x8c0
+    37c8:	91232002 	add	x2, x0, #0x8c8
     37cc:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    37d0:	91114001 	add	x1, x0, #0x450
+    37d0:	91116001 	add	x1, x0, #0x458
     37d4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    37d8:	91150000 	add	x0, x0, #0x540
+    37d8:	91152000 	add	x0, x0, #0x548
     37dc:	aa0203e3 	mov	x3, x2
     37e0:	52806d42 	mov	w2, #0x36a                 	// #874
     37e4:	97fffe43 	bl	30f0 <_assert_log>
@@ -5629,11 +5629,11 @@ brel():
     3820:	5400016a 	b.ge	384c <brel+0x170>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:878 (discriminator 1)
     3824:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3828:	91230002 	add	x2, x0, #0x8c0
+    3828:	91232002 	add	x2, x0, #0x8c8
     382c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3830:	91114001 	add	x1, x0, #0x450
+    3830:	91116001 	add	x1, x0, #0x458
     3834:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3838:	9115c000 	add	x0, x0, #0x570
+    3838:	9115e000 	add	x0, x0, #0x578
     383c:	aa0203e3 	mov	x3, x2
     3840:	52806dc2 	mov	w2, #0x36e                 	// #878
     3844:	97fffe2b 	bl	30f0 <_assert_log>
@@ -5659,11 +5659,11 @@ brel():
     3888:	54000160 	b.eq	38b4 <brel+0x1d8>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:894 (discriminator 1)
     388c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3890:	91230002 	add	x2, x0, #0x8c0
+    3890:	91232002 	add	x2, x0, #0x8c8
     3894:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3898:	91114001 	add	x1, x0, #0x450
+    3898:	91116001 	add	x1, x0, #0x458
     389c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    38a0:	91160000 	add	x0, x0, #0x580
+    38a0:	91162000 	add	x0, x0, #0x588
     38a4:	aa0203e3 	mov	x3, x2
     38a8:	52806fc2 	mov	w2, #0x37e                 	// #894
     38ac:	97fffe11 	bl	30f0 <_assert_log>
@@ -5693,11 +5693,11 @@ brel():
     3900:	54000160 	b.eq	392c <brel+0x250>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:902 (discriminator 1)
     3904:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3908:	91230002 	add	x2, x0, #0x8c0
+    3908:	91232002 	add	x2, x0, #0x8c8
     390c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3910:	91114001 	add	x1, x0, #0x450
+    3910:	91116001 	add	x1, x0, #0x458
     3914:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3918:	91170000 	add	x0, x0, #0x5c0
+    3918:	91172000 	add	x0, x0, #0x5c8
     391c:	aa0203e3 	mov	x3, x2
     3920:	528070c2 	mov	w2, #0x386                 	// #902
     3924:	97fffdf3 	bl	30f0 <_assert_log>
@@ -5713,11 +5713,11 @@ brel():
     3948:	54000160 	b.eq	3974 <brel+0x298>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:903 (discriminator 1)
     394c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3950:	91230002 	add	x2, x0, #0x8c0
+    3950:	91232002 	add	x2, x0, #0x8c8
     3954:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3958:	91114001 	add	x1, x0, #0x450
+    3958:	91116001 	add	x1, x0, #0x458
     395c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3960:	9117c000 	add	x0, x0, #0x5f0
+    3960:	9117e000 	add	x0, x0, #0x5f8
     3964:	aa0203e3 	mov	x3, x2
     3968:	528070e2 	mov	w2, #0x387                 	// #903
     396c:	97fffde1 	bl	30f0 <_assert_log>
@@ -5774,11 +5774,11 @@ brel():
     3a18:	54000160 	b.eq	3a44 <brel+0x368>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:922 (discriminator 1)
     3a1c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3a20:	91230002 	add	x2, x0, #0x8c0
+    3a20:	91232002 	add	x2, x0, #0x8c8
     3a24:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3a28:	91114001 	add	x1, x0, #0x450
+    3a28:	91116001 	add	x1, x0, #0x458
     3a2c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3a30:	91188000 	add	x0, x0, #0x620
+    3a30:	9118a000 	add	x0, x0, #0x628
     3a34:	aa0203e3 	mov	x3, x2
     3a38:	52807342 	mov	w2, #0x39a                 	// #922
     3a3c:	97fffdad 	bl	30f0 <_assert_log>
@@ -5792,11 +5792,11 @@ brel():
     3a58:	54000160 	b.eq	3a84 <brel+0x3a8>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:923 (discriminator 1)
     3a5c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3a60:	91230002 	add	x2, x0, #0x8c0
+    3a60:	91232002 	add	x2, x0, #0x8c8
     3a64:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3a68:	91114001 	add	x1, x0, #0x450
+    3a68:	91116001 	add	x1, x0, #0x458
     3a6c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3a70:	91198000 	add	x0, x0, #0x660
+    3a70:	9119a000 	add	x0, x0, #0x668
     3a74:	aa0203e3 	mov	x3, x2
     3a78:	52807362 	mov	w2, #0x39b                 	// #923
     3a7c:	97fffd9d 	bl	30f0 <_assert_log>
@@ -5810,11 +5810,11 @@ brel():
     3a98:	54000160 	b.eq	3ac4 <brel+0x3e8>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:924 (discriminator 1)
     3a9c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3aa0:	91230002 	add	x2, x0, #0x8c0
+    3aa0:	91232002 	add	x2, x0, #0x8c8
     3aa4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3aa8:	91114001 	add	x1, x0, #0x450
+    3aa8:	91116001 	add	x1, x0, #0x458
     3aac:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3ab0:	911a0000 	add	x0, x0, #0x680
+    3ab0:	911a2000 	add	x0, x0, #0x688
     3ab4:	aa0203e3 	mov	x3, x2
     3ab8:	52807382 	mov	w2, #0x39c                 	// #924
     3abc:	97fffd8d 	bl	30f0 <_assert_log>
@@ -5853,11 +5853,11 @@ brel():
     3b2c:	5400016b 	b.lt	3b58 <brel+0x47c>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:942 (discriminator 1)
     3b30:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3b34:	91230002 	add	x2, x0, #0x8c0
+    3b34:	91232002 	add	x2, x0, #0x8c8
     3b38:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3b3c:	91114001 	add	x1, x0, #0x450
+    3b3c:	91116001 	add	x1, x0, #0x458
     3b40:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3b44:	911a8000 	add	x0, x0, #0x6a0
+    3b44:	911aa000 	add	x0, x0, #0x6a8
     3b48:	aa0203e3 	mov	x3, x2
     3b4c:	528075c2 	mov	w2, #0x3ae                 	// #942
     3b50:	97fffd68 	bl	30f0 <_assert_log>
@@ -5899,11 +5899,11 @@ bpool():
     3bb8:	5400016a 	b.ge	3be4 <bpool+0x5c>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:1023 (discriminator 1)
     3bbc:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3bc0:	91232002 	add	x2, x0, #0x8c8
+    3bc0:	91234002 	add	x2, x0, #0x8d0
     3bc4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3bc8:	91114001 	add	x1, x0, #0x450
+    3bc8:	91116001 	add	x1, x0, #0x458
     3bcc:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3bd0:	911ae000 	add	x0, x0, #0x6b8
+    3bd0:	911b0000 	add	x0, x0, #0x6c0
     3bd4:	aa0203e3 	mov	x3, x2
     3bd8:	52807fe2 	mov	w2, #0x3ff                 	// #1023
     3bdc:	97fffd45 	bl	30f0 <_assert_log>
@@ -5922,11 +5922,11 @@ bpool():
     3c08:	54000160 	b.eq	3c34 <bpool+0xac>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:1033 (discriminator 1)
     3c0c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3c10:	91232002 	add	x2, x0, #0x8c8
+    3c10:	91234002 	add	x2, x0, #0x8d0
     3c14:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3c18:	91114001 	add	x1, x0, #0x450
+    3c18:	91116001 	add	x1, x0, #0x458
     3c1c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3c20:	91170000 	add	x0, x0, #0x5c0
+    3c20:	91172000 	add	x0, x0, #0x5c8
     3c24:	aa0203e3 	mov	x3, x2
     3c28:	52808122 	mov	w2, #0x409                 	// #1033
     3c2c:	97fffd31 	bl	30f0 <_assert_log>
@@ -5942,11 +5942,11 @@ bpool():
     3c50:	54000160 	b.eq	3c7c <bpool+0xf4>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:1034 (discriminator 1)
     3c54:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3c58:	91232002 	add	x2, x0, #0x8c8
+    3c58:	91234002 	add	x2, x0, #0x8d0
     3c5c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3c60:	91114001 	add	x1, x0, #0x450
+    3c60:	91116001 	add	x1, x0, #0x458
     3c64:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3c68:	9117c000 	add	x0, x0, #0x5f0
+    3c68:	9117e000 	add	x0, x0, #0x5f8
     3c6c:	aa0203e3 	mov	x3, x2
     3c70:	52808142 	mov	w2, #0x40a                 	// #1034
     3c74:	97fffd1f 	bl	30f0 <_assert_log>
@@ -6047,11 +6047,11 @@ bstats():
     3d98:	5400016c 	b.gt	3dc4 <bstats+0xb8>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget.c:1077 (discriminator 1)
     3d9c:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3da0:	91234002 	add	x2, x0, #0x8d0
+    3da0:	91236002 	add	x2, x0, #0x8d8
     3da4:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3da8:	91114001 	add	x1, x0, #0x450
+    3da8:	91116001 	add	x1, x0, #0x458
     3dac:	90000060 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    3db0:	911bc000 	add	x0, x0, #0x6f0
+    3db0:	911be000 	add	x0, x0, #0x6f8
     3db4:	aa0203e3 	mov	x3, x2
     3db8:	528086a2 	mov	w2, #0x435                 	// #1077
     3dbc:	97fffccd 	bl	30f0 <_assert_log>
@@ -6293,11 +6293,11 @@ bpool_foreach_pool():
     4074:	54000160 	b.eq	40a0 <bpool_foreach_pool+0xb8>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:256 (discriminator 1)
     4078:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    407c:	91236002 	add	x2, x0, #0x8d8
+    407c:	91238002 	add	x2, x0, #0x8e0
     4080:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4084:	911c0001 	add	x1, x0, #0x700
+    4084:	911c2001 	add	x1, x0, #0x708
     4088:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    408c:	91130000 	add	x0, x0, #0x4c0
+    408c:	91132000 	add	x0, x0, #0x4c8
     4090:	aa0203e3 	mov	x3, x2
     4094:	52802002 	mov	w2, #0x100                 	// #256
     4098:	97fffc16 	bl	30f0 <_assert_log>
@@ -6311,11 +6311,11 @@ bpool_foreach_pool():
     40b4:	54000160 	b.eq	40e0 <bpool_foreach_pool+0xf8>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:257 (discriminator 1)
     40b8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    40bc:	91236002 	add	x2, x0, #0x8d8
+    40bc:	91238002 	add	x2, x0, #0x8e0
     40c0:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    40c4:	911c0001 	add	x1, x0, #0x700
+    40c4:	911c2001 	add	x1, x0, #0x708
     40c8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    40cc:	91138000 	add	x0, x0, #0x4e0
+    40cc:	9113a000 	add	x0, x0, #0x4e8
     40d0:	aa0203e3 	mov	x3, x2
     40d4:	52802022 	mov	w2, #0x101                 	// #257
     40d8:	97fffc06 	bl	30f0 <_assert_log>
@@ -6602,11 +6602,11 @@ create_free_block():
     4404:	54000160 	b.eq	4430 <create_free_block+0x54>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:377 (discriminator 1)
     4408:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    440c:	9123c002 	add	x2, x0, #0x8f0
+    440c:	9123e002 	add	x2, x0, #0x8f8
     4410:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4414:	911c0001 	add	x1, x0, #0x700
+    4414:	911c2001 	add	x1, x0, #0x708
     4418:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    441c:	911c8000 	add	x0, x0, #0x720
+    441c:	911ca000 	add	x0, x0, #0x728
     4420:	aa0203e3 	mov	x3, x2
     4424:	52802f22 	mov	w2, #0x179                 	// #377
     4428:	97fffb32 	bl	30f0 <_assert_log>
@@ -6618,11 +6618,11 @@ create_free_block():
     443c:	5400016b 	b.lt	4468 <create_free_block+0x8c>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:378 (discriminator 1)
     4440:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4444:	9123c002 	add	x2, x0, #0x8f0
+    4444:	9123e002 	add	x2, x0, #0x8f8
     4448:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    444c:	911c0001 	add	x1, x0, #0x700
+    444c:	911c2001 	add	x1, x0, #0x708
     4450:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4454:	911d0000 	add	x0, x0, #0x740
+    4454:	911d2000 	add	x0, x0, #0x748
     4458:	aa0203e3 	mov	x3, x2
     445c:	52802f42 	mov	w2, #0x17a                 	// #378
     4460:	97fffb24 	bl	30f0 <_assert_log>
@@ -6634,11 +6634,11 @@ create_free_block():
     4474:	54000160 	b.eq	44a0 <create_free_block+0xc4>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:380 (discriminator 1)
     4478:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    447c:	9123c002 	add	x2, x0, #0x8f0
+    447c:	9123e002 	add	x2, x0, #0x8f8
     4480:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4484:	911c0001 	add	x1, x0, #0x700
+    4484:	911c2001 	add	x1, x0, #0x708
     4488:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    448c:	911d4000 	add	x0, x0, #0x750
+    448c:	911d6000 	add	x0, x0, #0x758
     4490:	aa0203e3 	mov	x3, x2
     4494:	52802f82 	mov	w2, #0x17c                 	// #380
     4498:	97fffb16 	bl	30f0 <_assert_log>
@@ -6665,11 +6665,11 @@ create_free_block():
     44dc:	54000160 	b.eq	4508 <create_free_block+0x12c>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:390 (discriminator 1)
     44e0:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    44e4:	9123c002 	add	x2, x0, #0x8f0
+    44e4:	9123e002 	add	x2, x0, #0x8f8
     44e8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    44ec:	911c0001 	add	x1, x0, #0x700
+    44ec:	911c2001 	add	x1, x0, #0x708
     44f0:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    44f4:	91170000 	add	x0, x0, #0x5c0
+    44f4:	91172000 	add	x0, x0, #0x5c8
     44f8:	aa0203e3 	mov	x3, x2
     44fc:	528030c2 	mov	w2, #0x186                 	// #390
     4500:	97fffafc 	bl	30f0 <_assert_log>
@@ -6685,11 +6685,11 @@ create_free_block():
     4524:	54000160 	b.eq	4550 <create_free_block+0x174>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:391 (discriminator 1)
     4528:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    452c:	9123c002 	add	x2, x0, #0x8f0
+    452c:	9123e002 	add	x2, x0, #0x8f8
     4530:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4534:	911c0001 	add	x1, x0, #0x700
+    4534:	911c2001 	add	x1, x0, #0x708
     4538:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    453c:	9117c000 	add	x0, x0, #0x5f0
+    453c:	9117e000 	add	x0, x0, #0x5f8
     4540:	aa0203e3 	mov	x3, x2
     4544:	528030e2 	mov	w2, #0x187                 	// #391
     4548:	97fffaea 	bl	30f0 <_assert_log>
@@ -6734,11 +6734,11 @@ brel_before():
     45bc:	54000163 	b.cc	45e8 <brel_before+0x48>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:405 (discriminator 1)
     45c0:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    45c4:	91242002 	add	x2, x0, #0x908
+    45c4:	91244002 	add	x2, x0, #0x910
     45c8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    45cc:	911c0001 	add	x1, x0, #0x700
+    45cc:	911c2001 	add	x1, x0, #0x708
     45d0:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    45d4:	911da000 	add	x0, x0, #0x768
+    45d4:	911dc000 	add	x0, x0, #0x770
     45d8:	aa0203e3 	mov	x3, x2
     45dc:	528032a2 	mov	w2, #0x195                 	// #405
     45e0:	97fffac4 	bl	30f0 <_assert_log>
@@ -6754,11 +6754,11 @@ brel_before():
     4600:	54000168 	b.hi	462c <brel_before+0x8c>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:408 (discriminator 1)
     4604:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4608:	91242002 	add	x2, x0, #0x908
+    4608:	91244002 	add	x2, x0, #0x910
     460c:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4610:	911c0001 	add	x1, x0, #0x700
+    4610:	911c2001 	add	x1, x0, #0x708
     4614:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4618:	911e0000 	add	x0, x0, #0x780
+    4618:	911e2000 	add	x0, x0, #0x788
     461c:	aa0203e3 	mov	x3, x2
     4620:	52803302 	mov	w2, #0x198                 	// #408
     4624:	97fffab3 	bl	30f0 <_assert_log>
@@ -6797,11 +6797,11 @@ brel_before():
     4690:	54000160 	b.eq	46bc <brel_before+0x11c>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:423 (discriminator 1)
     4694:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4698:	91242002 	add	x2, x0, #0x908
+    4698:	91244002 	add	x2, x0, #0x910
     469c:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    46a0:	911c0001 	add	x1, x0, #0x700
+    46a0:	911c2001 	add	x1, x0, #0x708
     46a4:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    46a8:	911ea000 	add	x0, x0, #0x7a8
+    46a8:	911ec000 	add	x0, x0, #0x7b0
     46ac:	aa0203e3 	mov	x3, x2
     46b0:	528034e2 	mov	w2, #0x1a7                 	// #423
     46b4:	97fffa8f 	bl	30f0 <_assert_log>
@@ -6853,11 +6853,11 @@ brel_before():
     4750:	5400016a 	b.ge	477c <brel_before+0x1dc>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:444 (discriminator 1)
     4754:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4758:	91242002 	add	x2, x0, #0x908
+    4758:	91244002 	add	x2, x0, #0x910
     475c:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4760:	911c0001 	add	x1, x0, #0x700
+    4760:	911c2001 	add	x1, x0, #0x708
     4764:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4768:	9115c000 	add	x0, x0, #0x570
+    4768:	9115e000 	add	x0, x0, #0x578
     476c:	aa0203e3 	mov	x3, x2
     4770:	52803782 	mov	w2, #0x1bc                 	// #444
     4774:	97fffa5f 	bl	30f0 <_assert_log>
@@ -6906,11 +6906,11 @@ brel_after():
     47f0:	5400016a 	b.ge	481c <brel_after+0x94>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:464 (discriminator 1)
     47f4:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    47f8:	91246002 	add	x2, x0, #0x918
+    47f8:	91248002 	add	x2, x0, #0x920
     47fc:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4800:	911c0001 	add	x1, x0, #0x700
+    4800:	911c2001 	add	x1, x0, #0x708
     4804:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4808:	911f4000 	add	x0, x0, #0x7d0
+    4808:	911f6000 	add	x0, x0, #0x7d8
     480c:	aa0203e3 	mov	x3, x2
     4810:	52803a02 	mov	w2, #0x1d0                 	// #464
     4814:	97fffa37 	bl	30f0 <_assert_log>
@@ -6965,11 +6965,11 @@ brel_after():
     48b4:	54000160 	b.eq	48e0 <brel_after+0x158>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:485 (discriminator 1)
     48b8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    48bc:	91246002 	add	x2, x0, #0x918
+    48bc:	91248002 	add	x2, x0, #0x920
     48c0:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    48c4:	911c0001 	add	x1, x0, #0x700
+    48c4:	911c2001 	add	x1, x0, #0x708
     48c8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    48cc:	911fa000 	add	x0, x0, #0x7e8
+    48cc:	911fc000 	add	x0, x0, #0x7f0
     48d0:	aa0203e3 	mov	x3, x2
     48d4:	52803ca2 	mov	w2, #0x1e5                 	// #485
     48d8:	97fffa06 	bl	30f0 <_assert_log>
@@ -6983,11 +6983,11 @@ brel_after():
     48f4:	54000160 	b.eq	4920 <brel_after+0x198>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:486 (discriminator 1)
     48f8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    48fc:	91246002 	add	x2, x0, #0x918
+    48fc:	91248002 	add	x2, x0, #0x920
     4900:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4904:	911c0001 	add	x1, x0, #0x700
+    4904:	911c2001 	add	x1, x0, #0x708
     4908:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    490c:	91200000 	add	x0, x0, #0x800
+    490c:	91202000 	add	x0, x0, #0x808
     4910:	aa0203e3 	mov	x3, x2
     4914:	52803cc2 	mov	w2, #0x1e6                 	// #486
     4918:	97fff9f6 	bl	30f0 <_assert_log>
@@ -7018,11 +7018,11 @@ brel_after():
     496c:	54000160 	b.eq	4998 <brel_after+0x210>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:499 (discriminator 1)
     4970:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4974:	91246002 	add	x2, x0, #0x918
+    4974:	91248002 	add	x2, x0, #0x920
     4978:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    497c:	911c0001 	add	x1, x0, #0x700
+    497c:	911c2001 	add	x1, x0, #0x708
     4980:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4984:	91208000 	add	x0, x0, #0x820
+    4984:	9120a000 	add	x0, x0, #0x828
     4988:	aa0203e3 	mov	x3, x2
     498c:	52803e62 	mov	w2, #0x1f3                 	// #499
     4990:	97fff9d8 	bl	30f0 <_assert_log>
@@ -7036,11 +7036,11 @@ brel_after():
     49ac:	54000160 	b.eq	49d8 <brel_after+0x250>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:500 (discriminator 1)
     49b0:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    49b4:	91246002 	add	x2, x0, #0x918
+    49b4:	91248002 	add	x2, x0, #0x920
     49b8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    49bc:	911c0001 	add	x1, x0, #0x700
+    49bc:	911c2001 	add	x1, x0, #0x708
     49c0:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    49c4:	91210000 	add	x0, x0, #0x840
+    49c4:	91212000 	add	x0, x0, #0x848
     49c8:	aa0203e3 	mov	x3, x2
     49cc:	52803e82 	mov	w2, #0x1f4                 	// #500
     49d0:	97fff9c8 	bl	30f0 <_assert_log>
@@ -7090,11 +7090,11 @@ brel_after():
     4a64:	5400018a 	b.ge	4a94 <brel_after+0x30c>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:516 (discriminator 1)
     4a68:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4a6c:	91246002 	add	x2, x0, #0x918
+    4a6c:	91248002 	add	x2, x0, #0x920
     4a70:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4a74:	911c0001 	add	x1, x0, #0x700
+    4a74:	911c2001 	add	x1, x0, #0x708
     4a78:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4a7c:	9115c000 	add	x0, x0, #0x570
+    4a7c:	9115e000 	add	x0, x0, #0x578
     4a80:	aa0203e3 	mov	x3, x2
     4a84:	52804082 	mov	w2, #0x204                 	// #516
     4a88:	97fff99a 	bl	30f0 <_assert_log>
@@ -7225,11 +7225,11 @@ raw_memalign():
     4c18:	54000169 	b.ls	4c44 <raw_memalign+0x1a8>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:568 (discriminator 1)
     4c1c:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4c20:	9124a002 	add	x2, x0, #0x928
+    4c20:	9124c002 	add	x2, x0, #0x930
     4c24:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4c28:	911c0001 	add	x1, x0, #0x700
+    4c28:	911c2001 	add	x1, x0, #0x708
     4c2c:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4c30:	91218000 	add	x0, x0, #0x860
+    4c30:	9121a000 	add	x0, x0, #0x868
     4c34:	aa0203e3 	mov	x3, x2
     4c38:	52804702 	mov	w2, #0x238                 	// #568
     4c3c:	97fff92d 	bl	30f0 <_assert_log>
@@ -7289,11 +7289,11 @@ bget_buf_size():
     4cd8:	5400016c 	b.gt	4d04 <bget_buf_size+0x68>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:606 (discriminator 1)
     4cdc:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4ce0:	9124e002 	add	x2, x0, #0x938
+    4ce0:	91250002 	add	x2, x0, #0x940
     4ce4:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4ce8:	911c0001 	add	x1, x0, #0x700
+    4ce8:	911c2001 	add	x1, x0, #0x708
     4cec:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4cf0:	91144000 	add	x0, x0, #0x510
+    4cf0:	91146000 	add	x0, x0, #0x518
     4cf4:	aa0203e3 	mov	x3, x2
     4cf8:	52804bc2 	mov	w2, #0x25e                 	// #606
     4cfc:	97fff8fd 	bl	30f0 <_assert_log>
@@ -7494,11 +7494,11 @@ malloc_add_pool():
     4ef4:	54000163 	b.cc	4f20 <malloc_add_pool+0x84>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:884 (discriminator 1)
     4ef8:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4efc:	91252002 	add	x2, x0, #0x948
+    4efc:	91254002 	add	x2, x0, #0x950
     4f00:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4f04:	911c0001 	add	x1, x0, #0x700
+    4f04:	911c2001 	add	x1, x0, #0x708
     4f08:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4f0c:	91224000 	add	x0, x0, #0x890
+    4f0c:	91226000 	add	x0, x0, #0x898
     4f10:	aa0203e3 	mov	x3, x2
     4f14:	52806e82 	mov	w2, #0x374                 	// #884
     4f18:	97fff876 	bl	30f0 <_assert_log>
@@ -7551,11 +7551,11 @@ malloc_add_pool():
     4fb8:	54000161 	b.ne	4fe4 <malloc_add_pool+0x148>
 /home/rex/devel/optee/optee_os/lib/libutils/isoc/bget_malloc.c:896 (discriminator 1)
     4fbc:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4fc0:	91252002 	add	x2, x0, #0x948
+    4fc0:	91254002 	add	x2, x0, #0x950
     4fc4:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4fc8:	911c0001 	add	x1, x0, #0x700
+    4fc8:	911c2001 	add	x1, x0, #0x708
     4fcc:	f0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    4fd0:	91228000 	add	x0, x0, #0x8a0
+    4fd0:	9122a000 	add	x0, x0, #0x8a8
     4fd4:	aa0203e3 	mov	x3, x2
     4fd8:	52807002 	mov	w2, #0x380                 	// #896
     4fdc:	97fff845 	bl	30f0 <_assert_log>
@@ -8710,7 +8710,7 @@ uuid2str():
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:222
     5da4:	2a0003e7 	mov	w7, w0
     5da8:	d0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    5dac:	91262000 	add	x0, x0, #0x988
+    5dac:	91264000 	add	x0, x0, #0x990
     5db0:	b9002be7 	str	w7, [sp,#40]
     5db4:	b90023e6 	str	w6, [sp,#32]
     5db8:	b9001be5 	str	w5, [sp,#24]
@@ -8845,7 +8845,7 @@ kprintf():
     5f38:	7101681f 	cmp	w0, #0x5a
     5f3c:	5400c808 	b.hi	783c <kprintf+0x1a44>
     5f40:	d0000041 	adrp	x1, f000 <__compound_literal.5+0xdc>
-    5f44:	91279021 	add	x1, x1, #0x9e4
+    5f44:	9127b021 	add	x1, x1, #0x9ec
     5f48:	b8605820 	ldr	w0, [x1,w0,uxtw #2]
     5f4c:	10000061 	adr	x1, 5f58 <kprintf+0x160>
     5f50:	8b20c820 	add	x0, x1, w0, sxtw #2
@@ -9933,7 +9933,7 @@ kprintf():
     6e2c:	b90097a0 	str	w0, [x29,#148]
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:436
     6e30:	b0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    6e34:	91256000 	add	x0, x0, #0x958
+    6e34:	91258000 	add	x0, x0, #0x960
     6e38:	f90043a0 	str	x0, [x29,#128]
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:437
     6e3c:	b940b7a0 	ldr	w0, [x29,#180]
@@ -9976,7 +9976,7 @@ kprintf():
     6ec4:	54000081 	b.ne	6ed4 <kprintf+0x10dc>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:443
     6ec8:	b0000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    6ecc:	91270000 	add	x0, x0, #0x9c0
+    6ecc:	91272000 	add	x0, x0, #0x9c8
     6ed0:	f9005fa0 	str	x0, [x29,#184]
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:444
     6ed4:	b940aba0 	ldr	w0, [x29,#168]
@@ -10260,13 +10260,13 @@ kprintf():
     72a8:	140000e5 	b	763c <kprintf+0x1844>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:470
     72ac:	90000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    72b0:	9125c000 	add	x0, x0, #0x970
+    72b0:	9125e000 	add	x0, x0, #0x978
     72b4:	f90043a0 	str	x0, [x29,#128]
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:471
     72b8:	14000004 	b	72c8 <kprintf+0x14d0>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:473
     72bc:	90000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    72c0:	91256000 	add	x0, x0, #0x958
+    72c0:	91258000 	add	x0, x0, #0x960
     72c4:	f90043a0 	str	x0, [x29,#128]
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:474
     72c8:	b940b7a0 	ldr	w0, [x29,#180]
@@ -10651,7 +10651,7 @@ kprintf():
     77f8:	1400000a 	b	7820 <kprintf+0x1a28>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:531
     77fc:	90000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    7800:	91272000 	add	x0, x0, #0x9c8
+    7800:	91274000 	add	x0, x0, #0x9d0
     7804:	f9005fa0 	str	x0, [x29,#184]
 /home/rex/devel/optee/optee_os/lib/libutils/ext/snprintk.c:532
     7808:	f9405fa0 	ldr	x0, [x29,#184]
@@ -11107,14 +11107,14 @@ trace_set_level():
     7d58:	7100101f 	cmp	w0, #0x4
     7d5c:	540000cc 	b.gt	7d74 <trace_set_level+0x34>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:44
-    7d60:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    7d64:	f9462000 	ldr	x0, [x0,#3136]
+    7d60:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    7d64:	f9462400 	ldr	x0, [x0,#3144]
     7d68:	b9400fe1 	ldr	w1, [sp,#12]
     7d6c:	b9000001 	str	w1, [x0]
     7d70:	14000005 	b	7d84 <trace_set_level+0x44>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:46
-    7d74:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    7d78:	f9462000 	ldr	x0, [x0,#3136]
+    7d74:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    7d78:	f9462400 	ldr	x0, [x0,#3144]
     7d7c:	52800081 	mov	w1, #0x4                   	// #4
     7d80:	b9000001 	str	w1, [x0]
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:47
@@ -11125,8 +11125,8 @@ trace_set_level():
 0000000000007d90 <trace_get_level>:
 trace_get_level():
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:51
-    7d90:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    7d94:	f9462000 	ldr	x0, [x0,#3136]
+    7d90:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    7d94:	f9462400 	ldr	x0, [x0,#3144]
     7d98:	b9400000 	ldr	w0, [x0]
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:52
     7d9c:	d65f03c0 	ret
@@ -11147,7 +11147,7 @@ trace_level_to_string():
     7dc0:	54000080 	b.eq	7dd0 <trace_level_to_string+0x30>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:62
     7dc4:	90000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    7dc8:	912d4000 	add	x0, x0, #0xb50
+    7dc8:	912d6000 	add	x0, x0, #0xb58
     7dcc:	14000010 	b	7e0c <trace_level_to_string+0x6c>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:64
     7dd0:	b9400fe0 	ldr	w0, [sp,#12]
@@ -11166,7 +11166,7 @@ trace_level_to_string():
     7df8:	d37df000 	lsl	x0, x0, #3
     7dfc:	8b010000 	add	x0, x0, x1
     7e00:	90000041 	adrp	x1, f000 <__compound_literal.5+0xdc>
-    7e04:	912e2021 	add	x1, x1, #0xb88
+    7e04:	912e4021 	add	x1, x1, #0xb90
     7e08:	8b010000 	add	x0, x0, x1
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:68
     7e0c:	910083ff 	add	sp, sp, #0x20
@@ -11209,8 +11209,8 @@ trace_printf():
     7e88:	7100001f 	cmp	w0, #0x0
     7e8c:	540000e0 	b.eq	7ea8 <trace_printf+0x94>
 /home/rex/devel/optee/optee_os/lib/libutils/ext/trace.c:80 (discriminator 1)
-    7e90:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    7e94:	f9462000 	ldr	x0, [x0,#3136]
+    7e90:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    7e94:	f9462400 	ldr	x0, [x0,#3144]
     7e98:	b9400000 	ldr	w0, [x0]
     7e9c:	b94043a1 	ldr	w1, [x29,#64]
     7ea0:	6b00003f 	cmp	w1, w0
@@ -11221,7 +11221,7 @@ trace_printf():
     7eb0:	97ffffbc 	bl	7da0 <trace_level_to_string>
     7eb4:	aa0003e2 	mov	x2, x0
     7eb8:	90000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    7ebc:	912d8001 	add	x1, x0, #0xb60
+    7ebc:	912da001 	add	x1, x0, #0xb68
     7ec0:	910143a0 	add	x0, x29, #0x50
     7ec4:	aa0203e3 	mov	x3, x2
     7ec8:	aa0103e2 	mov	x2, x1
@@ -11267,7 +11267,7 @@ trace_printf():
     7f48:	f940bfa0 	ldr	x0, [x29,#376]
     7f4c:	cb000021 	sub	x1, x1, x0
     7f50:	90000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    7f54:	912da000 	add	x0, x0, #0xb68
+    7f54:	912dc000 	add	x0, x0, #0xb70
     7f58:	b94177a3 	ldr	w3, [x29,#372]
     7f5c:	aa0003e2 	mov	x2, x0
     7f60:	aa0403e0 	mov	x0, x4
@@ -11289,10 +11289,10 @@ trace_printf():
     7f94:	d2802001 	mov	x1, #0x100                 	// #256
     7f98:	f940bfa0 	ldr	x0, [x29,#376]
     7f9c:	cb000021 	sub	x1, x1, x0
-    7fa0:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    7fa4:	f9462402 	ldr	x2, [x0,#3144]
+    7fa0:	b0000040 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    7fa4:	f9462802 	ldr	x2, [x0,#3152]
     7fa8:	90000040 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    7fac:	912dc000 	add	x0, x0, #0xb70
+    7fac:	912de000 	add	x0, x0, #0xb78
     7fb0:	aa0203e3 	mov	x3, x2
     7fb4:	aa0003e2 	mov	x2, x0
     7fb8:	aa0403e0 	mov	x0, x4
@@ -11332,7 +11332,7 @@ trace_printf():
     8024:	f940bfa0 	ldr	x0, [x29,#376]
     8028:	cb000021 	sub	x1, x1, x0
     802c:	f0000020 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    8030:	912de000 	add	x0, x0, #0xb78
+    8030:	912e0000 	add	x0, x0, #0xb80
     8034:	b94047a4 	ldr	w4, [x29,#68]
     8038:	f94027a3 	ldr	x3, [x29,#72]
     803c:	aa0003e2 	mov	x2, x0
@@ -11356,7 +11356,7 @@ trace_printf():
     8078:	f940bfa0 	ldr	x0, [x29,#376]
     807c:	cb000021 	sub	x1, x1, x0
     8080:	f0000020 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    8084:	912e0000 	add	x0, x0, #0xb80
+    8084:	912e2000 	add	x0, x0, #0xb88
     8088:	aa0003e2 	mov	x2, x0
     808c:	aa0303e0 	mov	x0, x3
     8090:	97fff6a1 	bl	5b14 <snprintk>
@@ -11907,7 +11907,7 @@ mpa_parity():
 mpa_constant_one():
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_misc.c:188
     86f8:	f0000020 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    86fc:	912f6000 	add	x0, x0, #0xbd8
+    86fc:	912f8000 	add	x0, x0, #0xbe0
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_misc.c:189
     8700:	d65f03c0 	ret
 
@@ -12354,8 +12354,8 @@ mpa_compute_fmm_context():
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_montgomery.c:209
     8c4c:	f9402ba6 	ldr	x6, [x29,#80]
     8c50:	f9402fa1 	ldr	x1, [x29,#88]
-    8c54:	90000040 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    8c58:	f9463000 	ldr	x0, [x0,#3168]
+    8c54:	90000040 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    8c58:	f9463400 	ldr	x0, [x0,#3176]
     8c5c:	f9400fa5 	ldr	x5, [x29,#24]
     8c60:	aa0003e4 	mov	x4, x0
     8c64:	f94037a3 	ldr	x3, [x29,#104]
@@ -12379,8 +12379,8 @@ mpa_compute_fmm_context():
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_montgomery.c:230
     8ca0:	f9402fa4 	ldr	x4, [x29,#88]
     8ca4:	f9402fa1 	ldr	x1, [x29,#88]
-    8ca8:	90000040 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    8cac:	f9463000 	ldr	x0, [x0,#3168]
+    8ca8:	90000040 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    8cac:	f9463400 	ldr	x0, [x0,#3176]
     8cb0:	f9400fa3 	ldr	x3, [x29,#24]
     8cb4:	aa0003e2 	mov	x2, x0
     8cb8:	aa0403e0 	mov	x0, x4
@@ -12502,7 +12502,7 @@ check_table():
     8df8:	b9400fe0 	ldr	w0, [sp,#12]
     8dfc:	53057c01 	lsr	w1, w0, #5
     8e00:	f0000020 	adrp	x0, f000 <__compound_literal.5+0xdc>
-    8e04:	912fc000 	add	x0, x0, #0xbf0
+    8e04:	912fe000 	add	x0, x0, #0xbf8
     8e08:	2a0103e1 	mov	w1, w1
     8e0c:	b8617801 	ldr	w1, [x0,x1,lsl #2]
     8e10:	b9400fe0 	ldr	w0, [sp,#12]
@@ -12594,8 +12594,8 @@ has_small_factors():
     8f04:	f9000fa0 	str	x0, [x29,#24]
     8f08:	f9000ba1 	str	x1, [x29,#16]
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_primetest.c:166
-    8f0c:	90000040 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    8f10:	9120a000 	add	x0, x0, #0x828
+    8f0c:	90000040 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    8f10:	9120c000 	add	x0, x0, #0x830
     8f14:	f9001fa0 	str	x0, [x29,#56]
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_primetest.c:170
     8f18:	9100a3a0 	add	x0, x29, #0x28
@@ -12676,8 +12676,8 @@ primality_test_miller_rabin():
     8ff8:	f9400fa1 	ldr	x1, [x29,#24]
     8ffc:	940008af 	bl	b2b8 <mpa_alloc_static_temp_var>
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_primetest.c:216
-    9000:	f0000020 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    9004:	91238000 	add	x0, x0, #0x8e0
+    9000:	f0000020 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    9004:	9123a000 	add	x0, x0, #0x8e8
     9008:	aa0003e1 	mov	x1, x0
     900c:	f94017a0 	ldr	x0, [x29,#40]
     9010:	940011cd 	bl	d744 <mpa_cmp>
@@ -12739,8 +12739,8 @@ primality_test_miller_rabin():
     90b8:	54000240 	b.eq	9100 <primality_test_miller_rabin+0x194>
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_primetest.c:235
     90bc:	f94037a2 	ldr	x2, [x29,#104]
-    90c0:	f0000020 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    90c4:	91240000 	add	x0, x0, #0x900
+    90c0:	f0000020 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    90c4:	91242000 	add	x0, x0, #0x908
     90c8:	b98087a1 	ldrsw	x1, [x29,#132]
     90cc:	b8617800 	ldr	w0, [x0,x1,lsl #2]
     90d0:	2a0003e1 	mov	w1, w0
@@ -12841,8 +12841,8 @@ primality_test_miller_rabin():
     91fc:	f94027a2 	ldr	x2, [x29,#72]
     9200:	f94023a3 	ldr	x3, [x29,#64]
     9204:	b9403fa4 	ldr	w4, [x29,#60]
-    9208:	f0000020 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    920c:	9123c000 	add	x0, x0, #0x8f0
+    9208:	f0000020 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    920c:	9123e000 	add	x0, x0, #0x8f8
     9210:	f9400fa7 	ldr	x7, [x29,#24]
     9214:	2a0403e6 	mov	w6, w4
     9218:	aa0303e5 	mov	x5, x3
@@ -18854,8 +18854,8 @@ mpa_exp_mod():
     dafc:	f9400005 	ldr	x5, [x0]
     db00:	f9403ba0 	ldr	x0, [x29,#112]
     db04:	f9400001 	ldr	x1, [x0]
-    db08:	f0000000 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    db0c:	f9461800 	ldr	x0, [x0,#3120]
+    db08:	f0000000 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    db0c:	f9461c00 	ldr	x0, [x0,#3128]
     db10:	b9401fa4 	ldr	w4, [x29,#28]
     db14:	f9401ba3 	ldr	x3, [x29,#48]
     db18:	aa0103e2 	mov	x2, x1
@@ -19616,10 +19616,10 @@ mpa_set_str():
     e3a8:	6b00003f 	cmp	w1, w0
     e3ac:	540001ed 	b.le	e3e8 <mpa_set_str+0x1c8>
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_io.c:324
-    e3b0:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    e3b4:	91248001 	add	x1, x0, #0x920
-    e3b8:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    e3bc:	91264000 	add	x0, x0, #0x990
+    e3b0:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    e3b4:	9124a001 	add	x1, x0, #0x928
+    e3b8:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    e3bc:	91266000 	add	x0, x0, #0x998
     e3c0:	52820046 	mov	w6, #0x1002                	// #4098
     e3c4:	b94033a5 	ldr	w5, [x29,#48]
     e3c8:	aa0103e4 	mov	x4, x1
@@ -19690,10 +19690,10 @@ mpa_set_str():
     e490:	2a0003e3 	mov	w3, w0
     e494:	f94017a0 	ldr	x0, [x29,#40]
     e498:	b9400002 	ldr	w2, [x0]
-    e49c:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    e4a0:	91250001 	add	x1, x0, #0x940
-    e4a4:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    e4a8:	91264000 	add	x0, x0, #0x990
+    e49c:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    e4a0:	91252001 	add	x1, x0, #0x948
+    e4a4:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    e4a8:	91266000 	add	x0, x0, #0x998
     e4ac:	2a0203e6 	mov	w6, w2
     e4b0:	2a0303e5 	mov	w5, w3
     e4b4:	aa0103e4 	mov	x4, x1
@@ -19874,12 +19874,12 @@ mpa_get_str():
     e6d4:	f100001f 	cmp	x0, #0x0
     e6d8:	54000161 	b.ne	e704 <mpa_get_str+0x50>
 /home/rex/devel/optee/optee_os/lib/libmpa/mpa_io.c:401 (discriminator 1)
-    e6dc:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    e6e0:	91268002 	add	x2, x0, #0x9a0
-    e6e4:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    e6e8:	9125c001 	add	x1, x0, #0x970
-    e6ec:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x410>
-    e6f0:	91262000 	add	x0, x0, #0x988
+    e6dc:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    e6e0:	9126a002 	add	x2, x0, #0x9a8
+    e6e4:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    e6e8:	9125e001 	add	x1, x0, #0x978
+    e6ec:	d0000000 	adrp	x0, 10000 <PRIME_TABLE+0x408>
+    e6f0:	91264000 	add	x0, x0, #0x990
     e6f4:	aa0203e3 	mov	x3, x2
     e6f8:	52803222 	mov	w2, #0x191                 	// #401
     e6fc:	97ffd27d 	bl	30f0 <_assert_log>

@@ -12,7 +12,7 @@ CFLAGS += -Wall -I../ta/include -I$(TEEC_EXPORT)/include -I./include
 #Add/link other required libraries here
 LDADD += -lteec -L$(TEEC_EXPORT)/lib
 
-BINARY=hello_world
+BINARY=boot_secure_os
 
 .PHONY: all
 all: $(BINARY)

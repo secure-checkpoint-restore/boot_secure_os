@@ -14,4 +14,4 @@ user_ta_header.o: \
  /home/rex/devel/optee/toolchains/aarch64/lib/gcc/aarch64-linux-gnu/6.2.1/include/stdarg.h \
  /home/rex/devel/optee/optee_os/out/arm/export-ta_arm64/include/tee_api_defines_extensions.h \
  /home/rex/devel/optee/optee_os/out/arm/export-ta_arm64/include/user_ta_header.h \
- user_ta_header_defines.h include/hello_world_ta.h
+ user_ta_header_defines.h include/boot_secure_os_ta.h
