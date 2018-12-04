@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
 	 * called.
 	 */
 	printf("Invoking TA to increment %d\n", op.params[0].value.a);
-	res = TEEC_InvokeCommand(&sess, TA_BOOT_SECURE_OS_CMD_SYSCALL, &op,
+	res = TEEC_InvokeCommand(&sess, 0, &op,
 				 &err_origin);
 	if (res != TEEC_SUCCESS)
 		errx(1, "TEEC_InvokeCommand failed with code 0x%x origin 0x%x",

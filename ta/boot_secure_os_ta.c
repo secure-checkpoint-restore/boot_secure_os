@@ -91,39 +91,14 @@ void TA_CloseSessionEntryPoint(void __maybe_unused *sess_ctx)
 	DMSG("Goodbye!\n");
 }
 
-static TEE_Result inc_value(uint32_t param_types,
-	TEE_Param params[4])
-{
-	uint32_t exp_param_types = TEE_PARAM_TYPES(TEE_PARAM_TYPE_VALUE_INOUT,
-						   TEE_PARAM_TYPE_NONE,
-						   TEE_PARAM_TYPE_NONE,
-						   TEE_PARAM_TYPE_NONE);
-
-	DMSG("has been called");
-	if (param_types != exp_param_types)
-		return TEE_ERROR_BAD_PARAMETERS;
-
-	DMSG("Got value: %u from NW", params[0].value.a);
-	params[0].value.a++;
-	DMSG("Increase value to: %u", params[0].value.a);
-	return TEE_SUCCESS;
-}
-
 /*
  * Called when a TA is invoked. sess_ctx hold that value that was
  * assigned by TA_OpenSessionEntryPoint(). The rest of the paramters
  * comes from normal world.
  */
 TEE_Result TA_InvokeCommandEntryPoint(void __maybe_unused *sess_ctx,
-			uint32_t cmd_id,
-			uint32_t param_types, TEE_Param params[4])
+			uint32_t __maybe_unused cmd_id,
+			uint32_t __maybe_unused param_types, TEE_Param __maybe_unused params[4])
 {
-	(void)&sess_ctx; /* Unused parameter */
-
-	switch (cmd_id) {
-	case TA_BOOT_SECURE_OS_CMD_SYSCALL:
-		return inc_value(param_types, params);
-	default:
-		return TEE_ERROR_BAD_PARAMETERS;
-	}
+	return TEE_SUCCESS;
 }

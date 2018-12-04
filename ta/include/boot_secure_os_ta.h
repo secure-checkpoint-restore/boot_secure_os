@@ -33,8 +33,5 @@
 		{ 0xbb, 0xe4, 0xfc, 0x78, 0x71, 0x6d, 0x05, 0x05} }
 
 /* The Trusted Application Function ID(s) implemented in this TA */
-#define TA_BOOT_SECURE_OS_CMD_SYSCALL	0
-#define TA_BOOT_SECURE_OS_CMD_HASH	1
-#define TA_BOOT_SECURE_OS_CMD_RANDOM	2
 
 #endif 
